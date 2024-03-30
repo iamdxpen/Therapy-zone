@@ -1,0 +1,158 @@
+// Body
+$font-weight-base: 400;
+$body-bg: #ffffff;
+
+// Typography
+$font-family-base: "Poppins", sans-serif;
+$display-font-family: $font-family-base;
+$headings-color: $dark;
+$line-height-base: 1.6;
+
+// Font Size
+$font-size-xs: 0.75rem; // 12px
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem; // 16px
+$font-size-base: 1.125rem; // 18px
+$font-size-lg: 1.25rem; // 20px
+$font-size-xl: 1.5rem; // 24px
+$font-size-2xl: 2rem; // 32px
+
+// Heading Tags
+$h1-font-size: 2.25rem; // 36px
+$h2-font-size: 2rem; // 32px
+$h3-font-size: 1.75rem; // 28px
+$h4-font-size: 1.5rem; // 24px
+$h5-font-size: 1.25rem; // 20px
+$h6-font-size: 1rem; // 16px
+$headings-font-weight: 700;
+
+// Button
+$btn-padding-x: 1rem;
+$btn-padding-y: 8px;
+
+$btn-line-height: 1.5;
+$btn-font-weight: 600;
+$btn-border-radius: 7rem;
+$btn-font-size: 16px;
+$btn-box-shadow: none;
+
+$btn-padding-x-lg: 2.5rem;
+$btn-padding-y-lg: 12px;
+$btn-line-height-lg: 1.5;
+$btn-font-weight-lg: 600;
+$btn-border-radius-lg: 7rem;
+$btn-font-size-lg: 16px;
+
+$btn-padding-x-sm: 1rem;
+$btn-padding-y-sm: 8px;
+$btn-font-weight-sm: 400;
+$btn-border-radius-sm: 6px;
+$btn-font-size-sm: 14px;
+$btn-border-radius-sm: 7rem;
+
+//avtar
+$avatar-width-xl: 80px;
+
+// Button neutral
+$btn-neutral-bg: white;
+$btn-neutral-border-color: $border-color;
+$btn-neutral-color: black;
+$btn-neutral-hover-bg: $primary;
+$btn-neutral-hover-border-color: $primary;
+$btn-neutral-hover-color: white;
+$btn-neutral-active-bg: $primary;
+$btn-neutral-active-border-color: $primary;
+$btn-neutral-active-color: white;
+
+
+// validation
+$form-feedback-font-size: $font-size-xs;
+
+// offcanvas
+$offcanvas-horizontal-width: 768px;
+
+// card
+$card-spacer-y: 1.25rem;
+$card-spacer-x: 1.25rem;
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    3xl: 1600px,
+    // 4xl: 1860px,
+    // 5xl: 2100px,
+    // 6xl: 2400px
+);
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+    3xl: 1520px,
+    // 4xl: 1780px,
+    // 5xl: 2020px,
+    // 6xl: 2320px
+);
+
+// sm: 36px 
+// md: 48px 
+// lg: 32px 
+// xl: 60px 
+// xxl: 80px 
+// 3xl: 90px 
+// 4xl: 100px
+
+@import "@webpixels/css/core/functions";
+@import "@webpixels/css/core/variables";
+
+$custom-theme-colors: (
+    "cyan": $cyan,
+    "light-gray":$light-gray,
+    "gray":$gray,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+
+// @import "@webpixels/css";
+
+// Load all the components
+@import "@webpixels/css/base";
+@import "@webpixels/css/forms";
+
+
+@import "@webpixels/css/components/accordions";
+@import "@webpixels/css/components/alerts";
+@import "@webpixels/css/components/avatars";
+@import "@webpixels/css/components/badges";
+@import "@webpixels/css/components/breadcrumbs";
+@import "@webpixels/css/components/buttons";
+// @import "@webpixels/css/components/carousels";
+@import "@webpixels/css/components/close";
+@import "@webpixels/css/components/dropdowns";
+// @import "@webpixels/css/components/frames";
+// @import "@webpixels/css/components/icons";
+// @import "@webpixels/css/components/list-groups";
+@import "@webpixels/css/components/overlays";
+@import "@webpixels/css/components/navbars";
+@import "@webpixels/css/components/navs";
+@import "@webpixels/css/components/cards";
+// @import "@webpixels/css/components/omnisearches";
+@import "@webpixels/css/components/paginations";
+// @import "@webpixels/css/components/placeholders";
+// @import "@webpixels/css/components/popovers";
+// @import "@webpixels/css/components/progress";
+// @import "@webpixels/css/components/shapes";
+@import "@webpixels/css/components/spinners";
+@import "@webpixels/css/components/tables";
+// @import "@webpixels/css/components/toasts";
+// @import "@webpixels/css/components/tooltips";
+
+
+@import "@webpixels/css/utilities";
+@import "bootstrap/scss/utilities/api";
