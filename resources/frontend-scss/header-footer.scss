@@ -1,0 +1,431 @@
+header {
+    .tv-header {
+        &.scroll {
+            position: fixed;
+            top: 0;
+            -webkit-animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            animation: fade-in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            img {
+                height: 42px;
+            }
+        }
+
+        .custome-collapse {
+            &::before {
+                margin: 0.5rem -0.7rem;
+            }
+        }
+
+        .nav-item {
+            .nav-link {
+                background-color: transparent;
+
+                span {
+                    position: relative;
+                    display: block;
+                    width: max-content;
+
+                    &::after {
+                        height: 2px;
+                        width: 0;
+                        background: $primary;
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: -2px;
+                        transition: .7s all;
+                    }
+                }
+
+                &:hover {
+                    color: black;
+                    background-color: transparent;
+
+                    span {
+                        &::after {
+                            width: 100%;
+                            right: auto;
+                            left: 0;
+                        }
+                    }
+                }
+
+                &:focus {
+                    background-color: transparent;
+                    color: black;
+                }
+            }
+
+            .active-down-arrow {
+                .nav-link {
+                    span {
+                        &::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .dropdown {
+            .dropdown-toggle-icon {
+                i {
+                    &.down-arrow-add {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .dropdown-item {
+                padding: 4px 20px 4px 20px;
+
+                span {
+                    position: relative;
+                    display: block;
+                    width: max-content;
+
+                    &::after {
+                        height: 2px;
+                        width: 0;
+                        background: $primary;
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: -1px;
+                        transition: .7s all;
+                    }
+                }
+
+                &:hover {
+                    color: #16192c;
+
+                    span {
+                        &::after {
+                            width: 100%;
+                            right: auto;
+                            left: 0;
+                        }
+                    }
+                }
+
+                @media (max-width: 576px) {
+                    padding: 4px 4px 4px 13px;
+                }
+            }
+
+            .hover-none {
+                &:hover {
+                    color: $cyan;
+                }
+            }
+        }
+
+        .dropdown-toggle-icon,
+        .dropdown-toggle {
+            justify-content: space-between;
+
+            i,
+            &::after {
+                border: none;
+                background-image: url(../../public/frontend/images/icons/black-arrow.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 10px;
+                height: 20px;
+                width: 20px;
+                margin-left: 2px;
+                transform-style: preserve-3d;
+                transition: transform 0.2s linear;
+                transform: rotate(0deg);
+            }
+
+            &[aria-expanded="true"] {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .menu-toggle {
+            position: relative;
+            padding: 0;
+            width: 43px;
+            height: 30px;
+            box-shadow: none;
+            outline: 0;
+
+            span {
+                margin: 0 auto;
+                position: relative;
+                top: 0;
+                transition-duration: 0s;
+                transition-delay: 0.2s;
+                transition: background-color 0.3s;
+                width: 20px;
+                height: 2px;
+                background-color: $primary;
+                display: block;
+                opacity: 1;
+
+                &:before {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background-color: $primary;
+                    display: block;
+                    opacity: 1;
+                    margin-top: -8px;
+                    transition-property: margin, transform;
+                    transition-duration: 0.2s;
+                    transition-delay: 0.2s, 0;
+                }
+
+                &:after {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 2px;
+                    background-color: $primary;
+                    display: block;
+                    opacity: 1;
+                    margin-top: 8px;
+                    transition-property: margin, transform;
+                    transition-duration: 0.2s;
+                    transition-delay: 0.2s, 0;
+                }
+            }
+        }
+
+        .menu-toggle[aria-expanded="true"] {
+            span {
+                background-color: rgba(0, 0, 0, 0);
+                transition: 0.3s background-color;
+
+                &:before {
+                    margin-top: 0;
+                    transform: rotate(45deg);
+                    transition-delay: 0, 0.2s;
+                }
+
+                &:after {
+                    margin-top: 0;
+                    transform: rotate(-45deg);
+                    transition-delay: 0, 0.2s;
+                }
+            }
+        }
+
+        .megamenu {
+            padding: 1rem;
+            max-height: 60vh;
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #888;
+                border-radius: 5px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #9c9c9c;
+                border-radius: 5px;
+            }
+        }
+
+        .hire-menu {
+            max-height: 60vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+    }
+}
+
+.small-head,
+.dropdown-menu {
+    ul {
+        list-style-type: none !important;
+        padding-left: 0px;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-bottom {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        .tv-header {
+            .has-megamenu {
+                position: static !important;
+            }
+
+            .megamenu {
+                left: 0;
+                right: 0;
+                width: 100%;
+                margin-top: 0;
+                max-height: 75vh;
+                overflow-y: auto;
+            }
+        }
+    }
+}
+
+// @media (max-width: 1199px) {
+//     header {
+//         .tv-header {
+//             .dropdown {
+//                 &:hover {
+//                     .dropdown-menu {
+//                         display: block;
+//                     }
+//                     .dropdown-toggle {
+//                         &::after {
+//                             transform: rotate(180deg);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+@include media-breakpoint-up(xl) {
+    header {
+        .tv-header {
+            .dropdown {
+                &:hover {
+                    .dropdown-menu {
+                        display: block;
+                    }
+
+                    .dropdown-toggle {
+                        &::after {
+                            transform: rotate(180deg);
+                        }
+                    }
+
+                    .dropdown-toggle-icon {
+                        i {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Footer Start
+.footer-top {
+    color: white;
+
+    .footer-clutch-logo {
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer-social-links {
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $light;
+            font-size: 20px;
+            color: $dark-gray;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                background-color: $cyan;
+            }
+        }
+    }
+
+    .footer-menu-title {
+        font-size: 16px;
+        color: $gray-600;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+    }
+
+    .footer-menu-column {
+        list-style: none;
+        padding: 0;
+
+        .footer-menu-link {
+            color: $gray-400;
+            padding-top: 0.3rem;
+            padding-bottom: 0.3rem;
+            display: block;
+            font-size: 14px;
+
+            &:hover {
+                color: $cyan;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    .footer-bottom-links {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+
+        li {
+            &:not(:last-child) {
+                &::after {
+                    content: "|";
+                    color: inherit;
+                    margin: 0px 8px;
+                }
+            }
+
+            a {
+                color: $light-gray;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    .footer-top {
+        .footer-clutch-logo {
+            right: 0;
+            left: auto;
+            transform: translate(0%, -50%);
+        }
+    }
+}

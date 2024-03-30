@@ -1,34 +1,35 @@
-<div class="header py-3">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg p-0">
-            <div class="top-logo d-flex">
-                <a href="{{route('home')}}"><img src="{{asset('front/assets/images/logo.svg')}}" alt="Rubycon electrical & electronic industries" width="100" height="50"></a>
-                <div class="logo-devider">&nbsp;</div>
-                <a href="{{route('home')}}"><img src="{{asset('front/assets/images/eurolite-logo.svg')}}" alt="Eurolight Lighting and Automation" width="100" height="50"></a>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-            <button id="nav-icon3" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link @if($controller=="HomeController") active @endif" aria-current="page" href="{{route('home')}}">Home</a></li>
-                    <li class="nav-item"><a class="nav-link @if($controller=="ProductController") active @endif" href="{{route('products')}}">Products</a></li>
-                    <li class="nav-item"><a class="nav-link @if($controller=="PageController" && $action == 'automation') active @endif" href="{{route('automation')}}">Automation</a></li>
-                    <li class="nav-item"><a class="nav-link @if($controller=="PageController" && $action == 'facilities') active @endif" href="{{route('facilities')}}">Facilities</a></li>
-                    {{-- <li class="nav-item"><a class="nav-link" href="#">Blog</a></li> --}}
-                    <li class="nav-item"><a class="nav-link @if($controller=="PageController" && $action == 'oems') active @endif" href="{{route('oems')}}">OEMs</a></li>
-                    <li class="nav-item"><a class="nav-link @if($controller=="PageController" && $action == 'contactUs') active @endif" href="{{route('contact-us')}}">Contact</a></li>
-                    <li class="nav-item d-md-none"><a class="nav-link" aria-current="page" href="{{route('home')}}#getInTouch">Get In Touch</a></li>
-                </ul>
-            </div>
-            <div class="gt-button ms-md-3">
-                <a href="{{route('home')}}#getInTouch" class="btn btn-primary">Get In Touch</a>
-            </div>
-        </nav>
-    </div>
-</div>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
