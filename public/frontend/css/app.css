@@ -1,3 +1,4 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
 @charset "UTF-8";
 :root {
   --x-white: #FFF;
@@ -48370,4 +48371,61 @@ a.text-current:hover {
   /* Change the color and opacity as needed */
   pointer-events: none;
   /* Ensures clicks pass through the overlay */
+}
+
+.go-top {
+  position: fixed;
+  height: 45px;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  z-index: 999999;
+  display: block;
+}
+.go-top .go-top-inner {
+  width: 45px;
+  height: 100%;
+  cursor: pointer;
+  background-color: #ABB6C5;
+  transition: transform 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), border-radius 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.go-top .go-top-inner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid 1px;
+  border-color: #ABB6C5;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.go-top .go-top-inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #C28566;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.go-top:hover .go-top-inner {
+  transform: scale(1);
+  color: white;
+}
+.go-top:hover .go-top-inner::after {
+  border-color: #C28566;
+  transform: scale(1.2);
+}
+.go-top:hover .go-top-inner::before {
+  transform: scale(1);
+}
+.go-top:hover .bi-chevron-up {
+  color: white;
+}
+.go-top .bi-chevron-up {
+  color: #2C0F00;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: translateZ(0);
 }
