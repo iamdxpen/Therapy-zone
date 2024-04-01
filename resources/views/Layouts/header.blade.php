@@ -1,35 +1,36 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
+<header class="sticky-top backdrop-blur-5 bg-light bg-opacity-80 border-bottom">
+    <div class="container">
+        <nav class="tv-header navbar navbar-expand-lg py-3 px-0">
+            <a class="navbar-brand py-0" href="https://www.techvoot.com">
+                <!-- Regular Logo -->
+                <img src="{{ asset('frontend/images/logo/logo.svg') }}" alt="therapy zone" width="205">
+            </a>
+            <button class="navbar-toggler menu-toggle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span></span>
+            </button>
+            <div class="collapse navbar-collapse custome-collapse gap-6" id="navbarMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link py-xl-2 px-3" href="https://www.techvoot.com/portfolio"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-xl-2 px-3" href="https://www.techvoot.com/portfolio"><span>About
+                                Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-xl-2 px-3"
+                            href="https://www.techvoot.com/portfolio"><span>Services</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link py-xl-2 px-3" href="https://www.techvoot.com/portfolio"><span>Contact
+                                Us</span></a>
+                    </li>
+                </ul>
+                <a class="btn btn-sm btn-dark px-6" role="button" href="https://www.techvoot.com/free-consultation">BOOK
+                    NOW</a>
+            </div>
+        </nav>
+    </div>
+</header>
