@@ -4,10 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://unpkg.com/@webpixels/css@1.2.6/dist/index.css" rel="stylesheet"> -->
     <link href="{{ asset('frontend/css/app.min.css?ver=')}}{{env('CDN_VERSION') }}" rel="stylesheet">
     <title>Techvoot Solutions</title>
-    <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"> 
 </head>
 <body>
     <div id="home" class="inter">
@@ -17,8 +16,13 @@
         </main>
         @include('Layouts.footer')
     </div>
-    <!-- <script src="../"></script> -->
-    <script src="{{ asset('frontend/js/custom.js') }}"></script>
+    <script src="{{ asset('frontend/js/jquery-1.11.0.min.js') }}"></script>
+    <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('frontend/library/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('frontend/library/vendor/aos/aos.js') }}"></script>
+    <script src="{{asset('plugins/toastr/toastr.min.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="{{ asset('frontend/js/custom.js?ver=')}}{{env('CDN_VERSION') }}"></script>
 </body>
 
 </html>

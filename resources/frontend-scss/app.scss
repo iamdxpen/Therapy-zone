@@ -1,11 +1,8 @@
 // Fonts
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 // Variables
 @import "./color.scss";
 @import "_variables";
-// Bootstrap
-// @import "~bootstrap/scss/bootstrap";
-
 @import "./helper";
-@import "./header-footer";
-@import "./custom";
+@import "./header-footer.scss";
+@import "./custom.scss";
