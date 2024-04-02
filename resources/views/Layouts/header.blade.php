@@ -16,7 +16,7 @@
                         <a class="nav-link py-xl-2 px-3" href="#"><span>Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-xl-2 px-3" href="#"><span>About
+                        <a class="nav-link py-xl-2 px-3" href="aboutUs"><span>About
                                 Us</span></a>
                     </li>
                     <li class="nav-item">
