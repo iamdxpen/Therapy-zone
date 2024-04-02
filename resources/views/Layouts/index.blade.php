@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link href="https://unpkg.com/@webpixels/css@1.2.6/dist/index.css" rel="stylesheet"> -->
-    <link href="{{ asset('frontend/css/app.min.css?ver=')}}{{env('CDN_VERSION') }}" rel="stylesheet">
+    <link href="{{ asset('frontend/css/app.min.css?ver=')}}{{env('CDN_VERSION') }}" rel="stylesheet">>
     <!-- slider -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Therapy zone</title>
