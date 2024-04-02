@@ -1,29 +1,16 @@
 @extends('Layouts.index')
 @section('content')
-<section
-    class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover bg-dark bg-opacity-80 h-lg-calc"
-    style="background-image: url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
-    <div class="color-tint"></div>
-    <div class="container my-lg-auto my-16 text-center position-relative overlap-20">
-        <p class="mb-8 text-gray-200">MOST LAXURY SPA IN BANER</p>
-        <h1 class="mb-8 text-light text-main">Therapy Zone Spa</h1>
-        <a class="btn btn-lg btn-light" role="button">BOOK Appointment</a>
-    </div>
-</section>
-<section class="mb-lg-40 mb-10">
+<section class="my-lg-40 my-10">
     <div class="container">
-        <div class="row align-items-center ">
-            <div class="col-lg-6">
-                <img width="600" src="{{ asset('frontend/images/home-page/welcome-to-therapy.jpg') }}" alt="
-                    Welcome To Therapy Zone Spa In Ahmedabad">
+        <div class="row gy-6 align-items-center gx-xl-16 gx-lg-8">
+            <div class="col-lg-6 order-lg-1 order-2">
+                <span class="d-block mb-2">Our Story</span>
+                <h1 class=" mb-5">Therapy Zone</h1>
+                <p>Prithivi, Akash, Jal, Agni, Vayu (Earth, Sky, Water, Fire, Air) are the five therapy zone or elements that the universe and the human body is composed of. Ancient eastern philosophy holds that the balance of these five therapy zone or elements in entire universe, including the human body, is the essence of wellness. Balance. That is what therapy zone Spa aims to strive for your mind, body and soul.</p>
             </div>
-            <div class="col-lg-6">
-                <h2 class="h1 mb-3">Welcome to Therapy zone</h2>
-                <p>Welcome to Therapy Zone Spa in Ahmedabad, your sanctuary for ultimate relaxation and rejuvenation.
-                    Immerse yourself in a world of tranquility as our expert therapists pamper you with bespoke
-                    treatments designed to soothe your mind, body, and soul. From revitalizing massages to luxurious
-                    skincare rituals, we offer a personalized escape from the hustle and bustle of everyday life.
-                    Experience a haven of serenity at Therapy Zone Spa, where every visit is a journey to wellness.</p>
+            <div class="col-lg-6 text-center order-lg-2 order-1">
+                <img width="680" class="" src="{{ asset('frontend/images/about-us/about-us.jpg') }}"
+                    alt="about-us">
             </div>
         </div>
     </div>
@@ -71,55 +58,7 @@
     </div>
 </section>
 @include('frontend.components.company-exp')
-<section class="mb-lg-40 mb-10">
-    <div class="container">
-        <div class="row gy-6 align-items-center">
-            <div class="col-lg-6 order-lg-1 order-2">
-                <span class="d-block mb-3">About Us</span>
-                <h2 class="h1 mb-5">The Beauty is about being Comfortable in your own skin!</h2>
-                <p class="mb-7">There are many variations of passages of Lorem Ipsum available, but the majority have
-                    suffered alteration in some form, buying to injected humour, or randomised words which don't look
-                    even many desktop publishing packages.</p>
-                <div class="row row-cols-sm-3 gy-4">
-                    <div>
-                        <div class="card">
-                            <div class="card-body text-center p-5">
-                                <img width="64" class="h-16 object-contain mb-3"
-                                    src="{{ asset('frontend/images/icon/beauty-experts.svg') }}" alt="Happy Clients">
-                                <p class="font-semibold text-dark">Beauty<br>
-                                    Experts</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card">
-                            <div class="card-body text-center p-5">
-                                <img width="64" class="h-16 object-contain mb-3"
-                                    src="{{ asset('frontend/images/icon/great-services.svg') }}" alt="Happy Clients">
-                                <p class="font-semibold text-dark">Great<br>
-                                    Services</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card">
-                            <div class="card-body text-center p-5">
-                                <img width="64" class="h-16 object-contain mb-3"
-                                    src="{{ asset('frontend/images/icon/genuine.svg') }}" alt="Happy Clients">
-                                <p class="font-semibold text-dark">100%<br>
-                                    Genuine</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 text-center order-lg-2 order-1">
-                <img width="520" class="" src="{{ asset('frontend/images/home-page/about-us.jpg') }}"
-                    alt="Happy Clients">
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="mb-lg-40 mb-10">
     <div class="container">
         <div>
