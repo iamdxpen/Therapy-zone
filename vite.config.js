@@ -1,18 +1,22 @@
 import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
+import laravel from 'laravel-vite-plugin';
+import path from 'path'
 
 export default defineConfig({
-  plugins: [vue()],
-  server: {
-    proxy: {
-      '/': 'http://localhost:8000',
+    plugins: [
+        laravel([
+            'resources/js/app.js',
+        ]),
+    ],
+    // resolve: {
+    //     alias: {
+            '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
+    //     }
+    // },
+    resolve: {
+        alias: {
+          // Replace '~bootstrap' with 'webpixel'
+          additionalData: `@import '@/styles/app.scss';`,
+        },
     },
-  },
-  build: {
-    rollupOptions: {
-      input: {
-        main: 'path/to/your/entry/point.js', // Replace this with the path to your entry point
-      },
-    },
-  },
 });
