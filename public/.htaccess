@@ -4,6 +4,12 @@
     </IfModule>
 
     RewriteEngine On
+    
+    RewriteCond %{THE_REQUEST} /public/index\.php(?:[/?](\S+))?\sHTTP [NC]
+    RewriteRule ^ /%1 [L,R=301,NE]
+
+    RewriteCond %{THE_REQUEST} /public/(\S*)\sHTTP [NC]
+    RewriteRule ^ /%1 [L,R=301,NE]
 
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .

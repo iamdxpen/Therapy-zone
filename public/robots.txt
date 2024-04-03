@@ -1,2 +1,27 @@
 User-agent: *
-Disallow:
+Disallow: 
+
+# Directories
+Disallow: /public/
+Disallow: /beta/
+Disallow: /page/
+Disallow: /frontend/
+Disallow: /404/
+Disallow: /blog/tag/
+#Disallow: /storage/
+Allow: /blog/
+Allow: /frontend/images/
+
+# Disallow filter urls
+Disallow: /*?page=
+
+# Allow social media bots . 
+#User-agent: Twitterbot
+#Allow: /storage/
+
+#User-agent: facebookexternalhit
+#Allow: /storage/
+
+Sitemap: https://www.techvoot.com/sitemap.xml
+
+# Crawl-delay: 10
