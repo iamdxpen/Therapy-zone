@@ -13,14 +13,14 @@
             <div class="collapse navbar-collapse custome-collapse gap-6" id="navbarMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link py-xl-2 px-3" href="#"><span>Home</span></a>
+                        <a class="nav-link py-xl-2 px-3" href="{{route('home')}}"><span>Home</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-xl-2 px-3" href="aboutUs"><span>About
+                        <a class="nav-link py-xl-2 px-3" href="{{route('about-us')}}"><span>About
                                 Us</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link py-xl-2 px-3" href="#"><span>Services</span></a>
+                        <a class="nav-link py-xl-2 px-3" href="{{route('services')}}"><span>Services</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link py-xl-2 px-3" href="#"><span>Contact

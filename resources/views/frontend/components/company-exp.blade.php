@@ -6,7 +6,7 @@
                     <img width="64" class="h-16 object-contain"
                         src="{{ asset('frontend/images/icon/years-experience.svg') }}" alt="Years Experience">
                     <div>
-                        <h2 class="font-60 text-primary-hover">6</h2>
+                        <h2 class="font-60 text-hover-primary">6</h2>
                         <p>Years Experience</p>
                     </div>
                 </div>
@@ -16,7 +16,7 @@
                     <img width="64" class="h-16 object-contain" src="{{ asset('frontend/images/icon/therapists.svg') }}"
                         alt="Therapists">
                     <div>
-                        <h2 class="font-60 text-primary-hover">6</h2>
+                        <h2 class="font-60 text-hover-primary">6</h2>
                         <p>Therapists</p>
                     </div>
                 </div>
@@ -26,7 +26,7 @@
                     <img width="64" class="h-16 object-contain"
                         src="{{ asset('frontend/images/icon/spa-treatments.svg') }}" alt="Spa Treatments">
                     <div>
-                        <h2 class="font-60 text-primary-hover">16</h2>
+                        <h2 class="font-60 text-hover-primary">16</h2>
                         <p>Spa Treatments</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <img width="64" class="h-16 object-contain"
                         src="{{ asset('frontend/images/icon/happy-clients.svg') }}" alt="Happy Clients">
                     <div>
-                        <h2 class="font-60 text-primary-hover">123</h2>
+                        <h2 class="font-60 text-hover-primary">123</h2>
                         <p>Happy Clients</p>
                     </div>
                 </div>
