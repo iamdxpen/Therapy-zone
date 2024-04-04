@@ -1,10 +1,9 @@
 @extends('Layouts.index')
 @section('content')
 <section
-    class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover bg-dark bg-opacity-80 h-lg-calc"src="{{ asset('frontend/images/banner/spa-banner.webp') }}"
-    style="--x-h-lg: 80px">
+    class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover bg-dark bg-opacity-80 h-lg-calc"
+    style="background-image: url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
     <div class="color-tint"></div>
-    
     <div class="container my-lg-auto my-16 text-center position-relative overlap-20">
         <p class="mb-8 text-gray-200">MOST LAXURY SPA IN BANER</p>
         <h1 class="mb-8 text-light text-main">Therapy Zone Spa</h1>
@@ -30,7 +29,7 @@
     </div>
 </section>
 <section class="position-relative py-10 vstack background-no-repeat bg-center bg-cover bg-dark bg-opacity-60 h-lg-calc"
-    style="--x-h-lg: 80px" src="{{ asset('frontend/images/home-page/experience-spa.jpg') }}">
+    style="background-image: url('../frontend/images/home-page/experience-spa.jpg');--x-h-lg: 80px">
     <div class="color-tint"></div>
     <div class="container my-lg-auto my-16 position-relative overlap-20">
         <div class="max-w-screen-sm mb-lg-20 mb-8">
