@@ -1,13 +1,12 @@
 @extends('Layouts.index')
 @section('content')
-<section
-    class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover bg-dark bg-opacity-80 h-lg-calc"
+<section class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover h-lg-calc"
     style="background-image: url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
     <div class="color-tint"></div>
     <div class="container my-lg-auto my-16 text-center position-relative overlap-20">
         <p class="mb-8 text-gray-200">MOST LAXURY SPA IN BANER</p>
         <h1 class="mb-8 text-light text-main">Therapy Zone Spa</h1>
-        <a class="btn btn-lg btn-light" role="button">BOOK Appointment</a>
+        <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
     </div>
 </section>
 <section class="mb-lg-40 mb-10">
@@ -85,7 +84,7 @@
                         <div class="card">
                             <div class="card-body text-center p-5">
                                 <img width="64" class="h-16 object-contain mb-3"
-                                    src="{{ asset('frontend/images/icon/beauty-experts.svg') }}" alt="Happy Clients">
+                                    src="{{ asset('frontend/images/icon/beauty-experts.svg') }}" alt="Beauty Experts">
                                 <p class="font-semibold text-dark">Beauty<br>
                                     Experts</p>
                             </div>
@@ -95,7 +94,7 @@
                         <div class="card">
                             <div class="card-body text-center p-5">
                                 <img width="64" class="h-16 object-contain mb-3"
-                                    src="{{ asset('frontend/images/icon/great-services.svg') }}" alt="Happy Clients">
+                                    src="{{ asset('frontend/images/icon/great-services.svg') }}" alt="Great Services">
                                 <p class="font-semibold text-dark">Great<br>
                                     Services</p>
                             </div>
@@ -105,7 +104,7 @@
                         <div class="card">
                             <div class="card-body text-center p-5">
                                 <img width="64" class="h-16 object-contain mb-3"
-                                    src="{{ asset('frontend/images/icon/genuine.svg') }}" alt="Happy Clients">
+                                    src="{{ asset('frontend/images/icon/genuine.svg') }}" alt="100 Genuine">
                                 <p class="font-semibold text-dark">100%<br>
                                     Genuine</p>
                             </div>
@@ -114,8 +113,7 @@
                 </div>
             </div>
             <div class="col-lg-6 text-center order-lg-2 order-1">
-                <img width="520" class="" src="{{ asset('frontend/images/home-page/about-us.jpg') }}"
-                    alt="Happy Clients">
+                <img width="520" class="" src="{{ asset('frontend/images/home-page/about-us.jpg') }}" alt="about us">
             </div>
         </div>
     </div>

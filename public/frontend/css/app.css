@@ -1,0 +1,288 @@
+:root {
+  --x-link-hover-color: #a06a4f;
+}
+
+.btn-primary:not(.do-not-change) {
+  background-color: #C28566;
+  border-color: #C28566;
+  border-radius: 0px;
+}
+.btn-primary:not(.do-not-change):hover {
+  background-color: #a0694e;
+}
+.btn-primary:not(.do-not-change):active {
+  background-color: #a0694e;
+}
+
+.btn-light:not(.do-not-change) {
+  border-radius: 0px;
+}
+
+.btn-dark:not(.do-not-change) {
+  border-radius: 0px;
+}
+
+.text-primary:not(.do-not-change) {
+  color: #C28566 !important;
+}
+
+.text-main {
+  font-size: calc(1rem + 3vw);
+}
+
+.list-check-1 li {
+  background-image: url(/images/list-type-check.svg?7721ded10a8a172b42be1b3c5d88c9ea);
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-left: 26px;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.font-60 {
+  font-size: calc(1.2rem + 2vw);
+}
+
+.text-hover-primary:hover {
+  color: #C28566;
+}
+
+.bg-hover-primary:hover {
+  background-color: #C28566 !important;
+}
+
+.backdrop-blur-5 {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.color-tint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Adjust the height as per your requirement */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Change the color and opacity as needed */
+  pointer-events: none;
+  /* Ensures clicks pass through the overlay */
+}
+
+.tv-header.scroll {
+  position: fixed;
+  top: 0;
+}
+.tv-header .navbar-brand img {
+  height: 48px;
+}
+.tv-header .custome-collapse::before {
+  margin: 0.5rem -0.7rem;
+}
+.tv-header .nav-item .nav-link {
+  background-color: transparent;
+}
+.tv-header .nav-item .nav-link span {
+  position: relative;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.tv-header .nav-item .nav-link span::after {
+  height: 2px;
+  width: 0;
+  background: #C28566;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -2px;
+  transition: 0.7s all;
+}
+.tv-header .nav-item .nav-link:hover {
+  color: black;
+  background-color: transparent;
+}
+.tv-header .nav-item .nav-link:hover span::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+.tv-header .nav-item .nav-link:focus {
+  background-color: transparent;
+  color: black;
+}
+.tv-header .dropdown .dropdown-toggle-icon i.down-arrow-add {
+  transform: rotate(180deg);
+}
+.tv-header .dropdown .dropdown-item {
+  padding: 4px 20px 4px 20px;
+}
+.tv-header .dropdown .dropdown-item span {
+  position: relative;
+  display: block;
+  width: -moz-max-content;
+  width: max-content;
+}
+.tv-header .dropdown .dropdown-item span::after {
+  height: 2px;
+  width: 0;
+  background: #C28566;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  transition: 0.7s all;
+}
+.tv-header .dropdown .dropdown-item:hover {
+  color: #16192c;
+}
+.tv-header .dropdown .dropdown-item:hover span::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+@media (max-width: 576px) {
+  .tv-header .dropdown .dropdown-item {
+    padding: 4px 4px 4px 13px;
+  }
+}
+.tv-header .dropdown-toggle-icon,
+.tv-header .dropdown-toggle {
+  justify-content: space-between;
+}
+.tv-header .dropdown-toggle-icon i, .tv-header .dropdown-toggle-icon::after,
+.tv-header .dropdown-toggle i,
+.tv-header .dropdown-toggle::after {
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  height: 20px;
+  width: 20px;
+  margin-left: 2px;
+  transform-style: preserve-3d;
+  transition: transform 0.2s linear;
+  transform: rotate(0deg);
+}
+.tv-header .dropdown-toggle-icon[aria-expanded=true]::after,
+.tv-header .dropdown-toggle[aria-expanded=true]::after {
+  transform: rotate(180deg);
+}
+.tv-header .menu-toggle {
+  position: relative;
+  padding: 0;
+  width: 43px;
+  height: 30px;
+  box-shadow: none;
+  outline: 0;
+}
+.tv-header .menu-toggle span {
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  transition-duration: 0s;
+  transition-delay: 0.2s;
+  transition: background-color 0.3s;
+  width: 20px;
+  height: 2px;
+  background-color: #C28566;
+  display: block;
+  opacity: 1;
+}
+.tv-header .menu-toggle span:before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #C28566;
+  display: block;
+  opacity: 1;
+  margin-top: -8px;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0;
+}
+.tv-header .menu-toggle span:after {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #C28566;
+  display: block;
+  opacity: 1;
+  margin-top: 8px;
+}
+.tv-header .menu-toggle[aria-expanded=true] span {
+  background-color: rgba(0, 0, 0, 0);
+}
+.tv-header .menu-toggle[aria-expanded=true] span:before {
+  margin-top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0, 0.2s;
+}
+.tv-header .menu-toggle[aria-expanded=true] span:after {
+  margin-top: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0, 0.2s;
+}
+
+.go-top {
+  position: fixed;
+  height: 45px;
+  right: 40px;
+  bottom: 40px;
+  z-index: 2;
+  z-index: 999999;
+  display: block;
+}
+.go-top .go-top-inner {
+  width: 45px;
+  height: 100%;
+  cursor: pointer;
+  background-color: #8898a9;
+  transition: transform 0.1s cubic-bezier(0.645, 0.045, 0.355, 1), border-radius 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.go-top .go-top-inner::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border: solid 1px;
+  border-color: #8898a9;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.go-top .go-top-inner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #C28566;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.go-top:hover .go-top-inner {
+  transform: scale(1);
+  color: white;
+}
+.go-top:hover .go-top-inner::after {
+  border-color: #C28566;
+  transform: scale(1.2);
+}
+.go-top:hover .go-top-inner::before {
+  transform: scale(1);
+}
+.go-top:hover .bi-chevron-up {
+  color: white;
+}
+.go-top .bi-chevron-up {
+  color: #1D0B03;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: translateZ(0);
+}

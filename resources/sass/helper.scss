@@ -1,0 +1,86 @@
+$gray-400: #8898a9;
+$primary: #C28566;
+$dark: #1D0B03;
+
+:root {
+    --x-link-hover-color: #a06a4f;
+}
+
+.btn-primary:not(.do-not-change) {
+    background-color: #C28566;
+    border-color: #C28566;
+    border-radius: 0px;
+
+    &:hover {
+        background-color: #a0694e;
+    }
+
+    &:active {
+        background-color: #a0694e;
+    }
+}
+
+.btn-light:not(.do-not-change) {
+    border-radius: 0px;
+}
+
+.btn-dark:not(.do-not-change) {
+    border-radius: 0px;
+}
+
+.text-primary:not(.do-not-change) {
+    color: #C28566 !important;
+}
+
+
+.text-main {
+    font-size: calc(1rem + 3vw);
+}
+
+.list-check-1 {
+    li {
+        background-image: url(../../public/frontend/images/icon/list-type-check.svg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+        padding-left: 26px;
+    }
+}
+
+.object-contain {
+    object-fit: contain;
+}
+
+
+.font-60 {
+    font-size: calc(1.2rem + 2vw);
+}
+
+.text-hover-primary {
+    &:hover {
+        color: $primary;
+    }
+}
+
+.bg-hover-primary {
+    &:hover {
+        background-color: $primary !important;
+    }
+}
+
+.backdrop-blur-5 {
+    backdrop-filter: blur(5px);
+}
+
+.color-tint {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Adjust the height as per your requirement */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Change the color and opacity as needed */
+    pointer-events: none;
+    /* Ensures clicks pass through the overlay */
+}

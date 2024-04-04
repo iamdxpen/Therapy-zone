@@ -4,12 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link href="{{ asset('frontend/css/app.min.css?ver=')}}{{env('CDN_VERSION') }}" rel="stylesheet">> -->
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     <link href="https://unpkg.com/@webpixels/css@1.2.6/dist/index.css" rel="stylesheet">
     <!-- slider -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="{{ asset('frontend/css/app.css') }}" rel="stylesheet">
     <title>Therapy zone</title>
 </head>
 
@@ -27,44 +26,43 @@
         </div>
     </div>
     <script src="{{ asset('frontend/js/jquery-1.11.0.min.js') }}"></script>
-    <script src="../../js.main.js"></script>
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('frontend/library/vendor/aos/aos.js') }}"></script>
     <script src="{{asset('plugins/toastr/toastr.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="{{ asset('frontend/js/custom.js?ver=')}}{{env('CDN_VERSION') }}"></script>
-    <!-- slider -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="{{ asset('frontend/js/custom.js') }}"></script>
+    <!-- slider -->
     <script>
-    var swiper = new Swiper(".testimonial-slider", {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        loop: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.testimonial-slider-next',
-            prevEl: '.testimonial-slider-prev',
-        },
-        breakpoints: {
-            // when window width is >= 640px
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-            },
-            // when window width is >= 768px
-            992: {
-                slidesPerView: 3,
-                spaceBetween: 30,
-            },
-        }
-    });
+    // var swiper = new Swiper(".testimonial-slider", {
+    //     slidesPerView: 1,
+    //     spaceBetween: 24,
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 2000,
+    //         disableOnInteraction: false
+    //     },
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         clickable: true,
+    //     },
+    //     navigation: {
+    //         nextEl: '.testimonial-slider-next',
+    //         prevEl: '.testimonial-slider-prev',
+    //     },
+    //     breakpoints: {
+    //         // when window width is >= 640px
+    //         768: {
+    //             slidesPerView: 2,
+    //             spaceBetween: 20,
+    //         },
+    //         // when window width is >= 768px
+    //         992: {
+    //             slidesPerView: 3,
+    //             spaceBetween: 30,
+    //         },
+    //     }
+    // });
     </script>
 </body>
 
