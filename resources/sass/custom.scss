@@ -1,6 +1,12 @@
-// $gray-400: #8898a9;
-// $primary: #C28566;
-// $dark: #1D0B03;
+.hero-slider {
+    border-radius: 600px;
+    background-color: #C28566;
+
+    &::after {
+        font-size: 16px;
+        color: white;
+    }
+}
 
 .go-top {
     position: fixed;
