@@ -9,7 +9,7 @@
                 <p>Prithivi, Akash, Jal, Agni, Vayu (Earth, Sky, Water, Fire, Air) are the five therapy zone or elements
                     that the universe and the human body is composed of. Ancient eastern philosophy holds that the
                     balance of these five therapy zone or elements in entire universe, including the human body, is the
-                    essence of wellness. Balance. That is what therapy zone Spa aims to strive for your mind, body and
+                    essence of wellness. Balance. That is what therapy zone aims to strive for your mind, body and
                     soul.</p>
             </div>
             <div class="col-lg-6 text-center order-lg-2 order-1">
@@ -26,11 +26,11 @@
             </div>
             <div class="col-lg-6">
                 <span class="d-block mb-2">Our Location</span>
-                <h2 class="h1 mb-5">SPA LOCATIONS</h2>
-                <p>Since opening that first spa in 2018 in the quaint ahmedabad, we have come a long way with our Spas
-                    now located across 70+ locations. Whether it be a spa located in the heart of the city or our Spa
-                    located in idyllic resort spa destinations, you can be assured of the warm hospitality and
-                    professional nature of services. Magnificently accoutred, therapy zone Spa spaces evokes the
+                <h2 class="h1 mb-5">LOCATIONS</h2>
+                <p>Since opening that first in 2018 in the quaint ahmedabad, we have come a long way with our Spas
+                    now located across 70+ locations. Whether it be a located in the heart of the city or our
+                    located in idyllic resort destinations, you can be assured of the warm hospitality and
+                    professional nature of services. Magnificently accoutred, therapy zone spaces evokes the
                     feelings of tranquillity, balance, and serenity in the consumer by using elements from nature,
                     beautiful landscapes, that and a pastel soothing colour pallette.</p>
             </div>

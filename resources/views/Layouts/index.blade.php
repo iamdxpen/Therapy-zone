@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://unpkg.com/@webpixels/css@1.2.6/dist/index.css" rel="stylesheet">
-    <!-- slider -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11.1.1/swiper-bundle.min.css" />
     <link href="{{ asset('frontend/css/app.css') }}" rel="stylesheet">
     <title>Therapy zone</title>
 </head>
@@ -27,10 +26,9 @@
     </div>
     <script src="{{ asset('frontend/js/jquery-1.11.0.min.js') }}"></script>
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('frontend/library/vendor/aos/aos.js') }}"></script>
-    <script src="{{asset('plugins/toastr/toastr.min.js')}}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="{{asset('plugins/toastr/toastr.min.js')}}"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
+    <script src="https://unpkg.com/swiper@11.1.1/swiper-bundle.min.js"></script>
     <script src="{{ asset('frontend/js/custom.js') }}"></script>
     <!-- slider -->
     <script>

@@ -27,6 +27,45 @@
             },
         }
     });
+    var typeOfSpa = new Swiper(".type-of-spa", {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      loop: true,
+      // autoplay: {
+      //     delay: 2000,
+      //     disableOnInteraction: false
+      // },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.type-of-spa-slider-next',
+          prevEl: '.type-of-spa-slider-prev',
+      },
+      breakpoints: {
+          // when window width is >= 640px
+          768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+          },
+          // when window width is >= 768px
+          992: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+          },
+      }
+  });
+
+var swiperHome = new Swiper(".swiper-home", {
+  freemode:true,
+  loop: true,
+  slidesPerView:'1',
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 
 $(function () {
   //Scroll event
@@ -82,4 +121,3 @@ $(".dropdown-toggle-icon .down-arrow").click(function (e) {
             .addClass("show");
     }
 });
-
