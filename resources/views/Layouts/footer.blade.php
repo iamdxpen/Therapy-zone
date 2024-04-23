@@ -10,8 +10,8 @@
                     </a>
                     <p class="text-white text-semibold text-sm mb-4">Therapy Zone: Your path to well-being
                         begins here. Discover services and insights for a happier, healthier you.</p>
-                    <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">
-                        <i class="bi bi-geo-alt me-2 text-primary"></i>Nikol Ahmedabad Gujrat 382350</a>
+                    <!-- <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">
+                        <i class="bi bi-geo-alt me-2 text-primary"></i>Nikol Ahmedabad Gujrat 382350</a> -->
                     <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">
                         <i class="bi bi-envelope me-2 text-primary"></i> support@doctors.com</a>
                     <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">

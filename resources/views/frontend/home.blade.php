@@ -1,28 +1,59 @@
 @extends('Layouts.index')
 @section('content')
-<section class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover h-lg-calc"
-    style="background-image: url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
+<!-- <section class="position-relative mb-lg-40 mb-10 py-10 vstack  h-lg-calc"
+    >
     <div class="color-tint"></div>
-    <div class="container my-lg-auto my-16 text-center position-relative overlap-20">
-        <p class="mb-8 text-gray-200">MOST LAXURY SPA IN BANER</p>
-        <h1 class="mb-8 text-light text-main">Therapy Zone Spa</h1>
-        <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
+    
+</section> -->
+<section class="mb-lg-40 mb-10">
+    <div class="swiper swiper-home">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="py-20 py-xl-72 py-lg-48 background-no-repeat bg-center bg-cover" style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');">
+                    <div class="container text-center h-full">
+                        <div class="vstack h-full justify-content-center">
+                            <p class="mb-8 text-gray-200">MOST LAXURY IN BANER</p>
+                            <h1 class="mb-8 text-light text-main">Therapy Zone</h1>
+                            <div>
+                                <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="py-20 py-xl-72 py-lg-48 background-no-repeat bg-center bg-cover" style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');">
+                    <div class="container text-center h-full">
+                        <div class="vstack h-full justify-content-center">
+                            <p class="mb-8 text-gray-200">MOST LAXURY IN BANER</p>
+                            <h1 class="mb-8 text-light text-main">Therapy Zone</h1>
+                            <div>
+                                <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev hero-slider w-md-8 h-md-8 w-6 h-6 "></div>
+        <div class="swiper-button-next hero-slider w-md-8 h-md-8 w-6 h-6"></div>
     </div>
 </section>
+
 <section class="mb-lg-40 mb-10">
     <div class="container">
         <div class="row align-items-center ">
             <div class="col-lg-6">
                 <img width="600" src="{{ asset('frontend/images/home-page/welcome-to-therapy.jpg') }}" alt="
-                    Welcome To Therapy Zone Spa In Ahmedabad">
+                    Welcome To Therapy Zone In Ahmedabad">
             </div>
             <div class="col-lg-6">
                 <h2 class="h1 mb-3">Welcome to Therapy zone</h2>
-                <p>Welcome to Therapy Zone Spa in Ahmedabad, your sanctuary for ultimate relaxation and rejuvenation.
+                <p>Welcome to Therapy Zone in Ahmedabad, your sanctuary for ultimate relaxation and rejuvenation.
                     Immerse yourself in a world of tranquility as our expert therapists pamper you with bespoke
                     treatments designed to soothe your mind, body, and soul. From revitalizing massages to luxurious
                     skincare rituals, we offer a personalized escape from the hustle and bustle of everyday life.
-                    Experience a haven of serenity at Therapy Zone Spa, where every visit is a journey to wellness.</p>
+                    Experience a haven of serenity at Therapy Zone, where every visit is a journey to wellness.</p>
             </div>
         </div>
     </div>
@@ -33,7 +64,7 @@
     <div class="container my-lg-auto my-16 position-relative overlap-20">
         <div class="max-w-screen-sm mb-lg-20 mb-8">
             <span class="d-block mb-3 text-gray-400">WHAT ELSE WE DO</span>
-            <h2 class="h1 mb-5 text-light">Get An Incredible Spa Experience with Therapy Zone Thai Spa</h2>
+            <h2 class="h1 mb-5 text-light">Get An Incredible Experience with Therapy Zone Thai</h2>
             <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority
                 have suffered alteration in some form, buying to injected humour, or randomised words which don't look
                 even many desktop publishing packages.</p>
@@ -119,40 +150,73 @@
     </div>
 </section>
 <section class="mb-lg-40 mb-10">
+
     <div class="container">
-        <div>
+    <div class="row align-items-center mb-10">
+            <div class="col-8">
             <span class="d-block mb-3">3 EASY STEPS</span>
             <h2 class="h1 mb-5">How It Works?</h2>
-            <p class="mb-7">It seems like you're looking for information or guidance on a spa experience called "Therapy
-                Zone Spa" in three easy steps. However, without specific details about what these steps entail, I can
-                provide a general outline that might help you create a relaxing spa experience. Here's a suggestion:</p>
+            <p>It seems like you're looking for information or guidance on a experience called "Therapy
+                Zone" in three easy steps. However, without specific details about what these steps entail, I can
+                provide a general outline that might help you create a relaxing experience. Here's a suggestion:</p>
+            </div>
+            <div class="col-4 text-end">
+                <button type="button" class="btn btn-primary type-of-spa-slider-prev">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button type="button" class="btn btn-primary type-of-spa-slider-next">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
         </div>
-        <div class="row row-cols-lg-3 row-cols-md-2 gy-6 justify-content-center">
-            <div>
+        <div>
+        </div>
+        <div class="swiper type-of-spa">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
                 <div class="card bg-gray-200-hover h-full">
+                <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                     <div class="card-body">
-                        <h3 class="font-60 mb-4">1</h3>
+                        <!-- <h3 class="font-60 mb-4">1</h3> -->
                         <h4 class="h2 text-primary mb-4">Book Appointment</h4>
-                        <p>Call us prior to book appointment or Walk-In directly to our spa. Everyone is welcome.</p>
+                        <p>Call us prior to book appointment or Walk-In directly to our. Everyone is welcome.</p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card bg-gray-200-hover h-full">
-                    <div class="card-body">
-                        <h3 class="font-60 mb-4">2</h3>
-                        <h4 class="h2 text-primary mb-4">Get Treatment</h4>
-                        <p>Select treatment of your choice & our well trained therapists will take care of the rest.</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card bg-gray-200-hover h-full">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
+                    class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
+                        <div class="card-body">
+                            <!-- <h3 class="font-60 mb-4">2</h3> -->
+                            <h4 class="h2 text-primary mb-4">Get Treatment</h4>
+                            <p>Select treatment of your choice & our well trained therapists will take care of the rest.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="card bg-gray-200-hover h-full">
-                    <div class="card-body">
-                        <h3 class="font-60 mb-4">3</h3>
-                        <h4 class="h2 text-primary mb-4">Feel Relaxed</h4>
-                        <p>Guaranteed you will leave our spa feeling relaxed, rejuvenated, energized and stress free.
-                        </p>
+                <div class="swiper-slide">
+                    <div class="card bg-gray-200-hover h-full">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
+                    class="card-img-top h-72 object-fit-cover" width="423" height="288"  alt="...">
+                        <div class="card-body">
+                            <!-- <h3 class="font-60 mb-4">3</h3> -->
+                            <h4 class="h2 text-primary mb-4">Feel Relaxed</h4>
+                            <p>Guaranteed you will leave our feeling relaxed, rejuvenated, energized and stress free.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card bg-gray-200-hover h-full">
+                    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
+                    class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
+                        <div class="card-body">
+                            <!-- <h3 class="font-60 mb-4">3</h3> -->
+                            <h4 class="h2 text-primary mb-4">Feel Relaxed</h4>
+                            <p>Guaranteed you will leave our feeling relaxed, rejuvenated, energized and stress free.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

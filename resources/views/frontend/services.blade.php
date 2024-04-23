@@ -6,10 +6,10 @@
     <div class="container my-lg-auto my-16 text-center position-relative overlap-20">
         <div class="max-w-screen-md mx-auto">
             <h1 class="mb-8 text-primary text-main">Our Services</h1>
-            <p class="text-gray-200">Therapy zone offers a holistic range of beauty and spa services ranging from
+            <p class="text-gray-200">Therapy zone offers a holistic range of beauty and services ranging from
                 massages,
                 facials, body scrubs,
-                body wraps, manicures, pedicures, hair spa and luxurious wellness retreats.</p>
+                body wraps, manicures, pedicures, hair and luxurious wellness retreats.</p>
         </div>
     </div>
 </section>
@@ -38,7 +38,7 @@
             <div>
                 <img width="430" class="mb-4" src="{{ asset('frontend/images/services/spa-locations.jpg') }}"
                     alt="about-us">
-                <h3 class="text-primary mb-2">SPA LOCATIONS</h3>
+                <h3 class="text-primary mb-2">LOCATIONS</h3>
                 <p>Includes pressure points, muscle stretching & compression in a rhythmic motion.</p>
             </div>
             <div>

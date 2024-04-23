@@ -32,6 +32,23 @@ $dark: #1D0B03;
     color: #C28566 !important;
 }
 
+@media (min-width: 991px) {
+    .h-lg-100 {
+        height: 33rem !important;
+    }
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.background-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
 
 .text-main {
     font-size: calc(1rem + 3vw);
