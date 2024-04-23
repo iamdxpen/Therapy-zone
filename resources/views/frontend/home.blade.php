@@ -25,7 +25,7 @@
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card bg-gray-200-hover">
-                                        <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
                                             class="card-img-top h-72 object-fit-cover" width="423" height="288"
                                             alt="...">
                                         <div class="card-body">
@@ -37,7 +37,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card bg-gray-200-hover">
-                                        <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        <img src="https://images.pexels.com/photos/3212179/pexels-photo-3212179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             class="card-img-top h-72 object-fit-cover" width="423" height="288"
                                             alt="...">
                                         <div class="card-body">
@@ -49,7 +49,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card bg-gray-200-hover">
-                                        <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             class="card-img-top h-72 object-fit-cover" width="423" height="288"
                                             alt="...">
                                         <div class="card-body">
@@ -61,7 +61,7 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card bg-gray-200-hover">
-                                        <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                                             class="card-img-top h-72 object-fit-cover" width="423" height="288"
                                             alt="...">
                                         <div class="card-body">
@@ -211,7 +211,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                        <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
                             class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">1</h3> -->
@@ -224,7 +224,7 @@
 
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                        <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
+                        <img src="https://images.pexels.com/photos/3212179/pexels-photo-3212179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">2</h3> -->
@@ -236,7 +236,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                        <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
+                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">3</h3> -->
@@ -248,7 +248,7 @@
                 </div>
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                        <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
+                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                             class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">3</h3> -->
