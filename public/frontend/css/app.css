@@ -91,6 +91,10 @@
   /* Ensures clicks pass through the overlay */
 }
 
+.max-w-screen-xs {
+  max-width: 400px;
+}
+
 .tv-header.scroll {
   position: fixed;
   top: 0;
