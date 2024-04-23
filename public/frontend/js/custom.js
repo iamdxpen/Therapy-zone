@@ -58,13 +58,13 @@
   });
 
 var swiperHome = new Swiper(".swiper-home", {
-  freemode:true,
-  loop: true,
-  slidesPerView:'1',
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+  // direction: "vertical",
+  // autoHeight: true, 
+  spaceBetween: 24,
+  slidesPerView: "auto",
+  centeredSlides: true,
+  effect: "cards",
+      // grabCursor: true,
 });
 
 $(function () {
