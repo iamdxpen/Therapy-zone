@@ -14,11 +14,11 @@ class HomeController extends Controller
     }
     public function aboutUs()
     {
-        return view('frontend.about-us'); // Assuming you have a view named 'aboutus.blade.php'
+        return view('frontend.about-us'); 
     }
 
     public function services()
     {
-        return view('frontend.services'); // Assuming you have a view named 'services.blade.php'
+        return view('frontend.services');
     }
 }
