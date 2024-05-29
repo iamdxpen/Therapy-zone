@@ -5,38 +5,78 @@
     <div class="color-tint"></div>
     
 </section> -->
-<section class="mb-lg-40 mb-10">
-    <div class="swiper swiper-home">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="py-20 py-xl-72 py-lg-48 background-no-repeat bg-center bg-cover" style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');">
-                    <div class="container text-center h-full">
-                        <div class="vstack h-full justify-content-center">
-                            <p class="mb-8 text-gray-200">MOST LAXURY IN BANER</p>
-                            <h1 class="mb-8 text-light text-main">Therapy Zone</h1>
-                            <div>
-                                <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
-                            </div>
+<section class="mb-lg-40 mb-10 overflow-hidden position-relative">
+    <div class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover h-lg-calc"
+        style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
+        <div class="container my-lg-auto my-16 overlap-20">
+            <div class="row align-items-center gy-6">
+                <div class="col-lg-7">
+                    <div class="">
+                        <p class="mb-8 text-gray-200">MOST LAXURY IN BANER</p>
+                        <h1 class="mb-8 text-light text-main">Therapy Zone</h1>
+                        <div>
+                            <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="py-20 py-xl-72 py-lg-48 background-no-repeat bg-center bg-cover" style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');">
-                    <div class="container text-center h-full">
-                        <div class="vstack h-full justify-content-center">
-                            <p class="mb-8 text-gray-200">MOST LAXURY IN BANER</p>
-                            <h1 class="mb-8 text-light text-main">Therapy Zone</h1>
-                            <div>
-                                <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
+                <div class="col-lg-5">
+                    <div class="max-w-screen-xs mx-auto">
+                        <div class="swiper swiper-home">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card bg-gray-200-hover">
+                                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h3 class="h2 text-primary mb-4">Card 1</h3>
+                                            <p> <span class="text-primary">Location: </span> Call us prior to book
+                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-gray-200-hover">
+                                        <img src="https://images.pexels.com/photos/3212179/pexels-photo-3212179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h3 class="h2 text-primary mb-4">Card 2</h3>
+                                            <p><span class="text-primary">Location: </span>Call us prior to book
+                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-gray-200-hover">
+                                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h3 class="h2 text-primary mb-4">Card 3</h3>
+                                            <p><span class="text-primary">Location: </span>Call us prior to book
+                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="card bg-gray-200-hover">
+                                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
+                                            alt="...">
+                                        <div class="card-body">
+                                            <h3 class="h2 text-primary mb-4">Card 4</h3>
+                                            <p><span class="text-primary">Location: </span>Call us prior to book
+                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="swiper-button-prev hero-slider w-md-8 h-md-8 w-6 h-6 "></div>
-        <div class="swiper-button-next hero-slider w-md-8 h-md-8 w-6 h-6"></div>
     </div>
 </section>
 
@@ -149,16 +189,12 @@
         </div>
     </div>
 </section>
-<section class="mb-lg-40 mb-10">
 
+<section class="mb-lg-40 mb-10">
     <div class="container">
-    <div class="row align-items-center mb-10">
+        <div class="row align-items-center mb-10">
             <div class="col-8">
-            <span class="d-block mb-3">3 EASY STEPS</span>
-            <h2 class="h1 mb-5">How It Works?</h2>
-            <p>It seems like you're looking for information or guidance on a experience called "Therapy
-                Zone" in three easy steps. However, without specific details about what these steps entail, I can
-                provide a general outline that might help you create a relaxing experience. Here's a suggestion:</p>
+                <h2 class="h1 font-bolder">Type of Spa</h2>
             </div>
             <div class="col-4 text-end">
                 <button type="button" class="btn btn-primary type-of-spa-slider-prev">
@@ -174,48 +210,51 @@
         <div class="swiper type-of-spa">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                <div class="card bg-gray-200-hover h-full">
-                <img src="https://images.unsplash.com/photo-1608848461950-0fe51dfc41cb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
-                    <div class="card-body">
-                        <!-- <h3 class="font-60 mb-4">1</h3> -->
-                        <h4 class="h2 text-primary mb-4">Book Appointment</h4>
-                        <p>Call us prior to book appointment or Walk-In directly to our. Everyone is welcome.</p>
+                    <div class="card bg-gray-200-hover h-full">
+                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+                            class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
+                        <div class="card-body">
+                            <!-- <h3 class="font-60 mb-4">1</h3> -->
+                            <h4 class="text-primary mb-2">Lorem ipsum dolor</h4>
+                            <p><span class="text-primary">Location: </span> Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. At nemo</p>
+                        </div>
                     </div>
                 </div>
-                </div>
+
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
-                    class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
+                        <img src="https://images.pexels.com/photos/3212179/pexels-photo-3212179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">2</h3> -->
-                            <h4 class="h2 text-primary mb-4">Get Treatment</h4>
-                            <p>Select treatment of your choice & our well trained therapists will take care of the rest.</p>
+                            <h4 class="text-primary mb-2">Lorem ipsum dolor</h4>
+                            <p><span class="text-primary">Location: </span> Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. At nemo</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
-                    class="card-img-top h-72 object-fit-cover" width="423" height="288"  alt="...">
+                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">3</h3> -->
-                            <h4 class="h2 text-primary mb-4">Feel Relaxed</h4>
-                            <p>Guaranteed you will leave our feeling relaxed, rejuvenated, energized and stress free.
-                            </p>
+                            <h4 class="text-primary mb-2">Lorem ipsum dolor</h4>
+                            <p><span class="text-primary">Location: </span> Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. At nemo</p>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="card bg-gray-200-hover h-full">
-                    <img src="https://cdn.pixabay.com/photo/2024/01/29/20/40/cat-8540772_1280.jpg"
-                    class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
+                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            class="card-img-top h-72 object-fit-cover" width="423" height="288" alt="...">
                         <div class="card-body">
                             <!-- <h3 class="font-60 mb-4">3</h3> -->
-                            <h4 class="h2 text-primary mb-4">Feel Relaxed</h4>
-                            <p>Guaranteed you will leave our feeling relaxed, rejuvenated, energized and stress free.
-                            </p>
+                            <h4 class="text-primary mb-2">Lorem ipsum dolor</h4>
+                            <p><span class="text-primary">Location: </span> Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit. At nemo</p>
                         </div>
                     </div>
                 </div>

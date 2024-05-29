@@ -101,3 +101,7 @@ $dark: #1D0B03;
     pointer-events: none;
     /* Ensures clicks pass through the overlay */
 }
+
+.max-w-screen-xs {
+    max-width: 400px;
+}
