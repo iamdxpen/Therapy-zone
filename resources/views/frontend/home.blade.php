@@ -1,12 +1,7 @@
 @extends('Layouts.index')
 @section('content')
-<!-- <section class="position-relative mb-lg-40 mb-10 py-10 vstack  h-lg-calc"
-    >
-    <div class="color-tint"></div>
-    
-</section> -->
 <section class="mb-lg-40 mb-10 overflow-hidden position-relative">
-    <div class="position-relative mb-lg-40 mb-10 py-10 vstack background-no-repeat bg-center bg-cover h-lg-calc"
+    <div class="position-relative py-10 vstack background-no-repeat bg-center bg-cover h-lg-calc"
         style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
         <div class="container my-lg-auto my-16 overlap-20">
             <div class="row align-items-center gy-6">
