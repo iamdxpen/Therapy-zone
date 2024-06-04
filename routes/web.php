@@ -13,7 +13,9 @@ use App\Http\Controllers\HomeController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::group(['prefix' => 'admin'],base_path('routes/admin.php'));
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us'); // Note the hyphenated URL
+Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
