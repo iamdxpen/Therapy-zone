@@ -59,12 +59,19 @@ var typeOfSpa = new Swiper(".type-of-spa", {
 
 var swiperHome = new Swiper(".swiper-home", {
     // direction: "vertical",
-    // autoHeight: true,
+    autoHeight: true,
     spaceBetween: 24,
     slidesPerView: "auto",
-    centeredSlides: true,
-    effect: "cards",
+    // slidesPerView: 1,
+    centeredSlides: false,
+    direction: "vertical",
+    // effect: "cards",
     // grabCursor: true,
+    mousewheel: true,
+    navigation: {
+        nextEl: ".home-slider-next",
+        prevEl: ".home-slider-prev",
+    },
 });
 
 $(function () {
