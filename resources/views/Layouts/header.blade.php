@@ -51,7 +51,6 @@
                                             class=""
                                             alt="google pay QR"
                                         />
-                                        
                                     </div>
                                     <div class="col-lg-6">
                                        <form action="">
@@ -87,6 +86,15 @@
                                                     placeholder="Enter your mobile number"
                                                 />
                                             </div>
+                                           <div>
+                                           <label for="" class="form-label">Packeges</label>
+                                            <select class="form-select select-control mb-3" name="experience_level" id="demo1">
+                                                    <option selected="" disabled="">How many years of experience do you have?</option>
+                                                    <option value="junior">Junior level (1-3 Years of experience)</option>
+                                                    <option value="mid">Mid level (3-5 Years of experience)</option>
+                                                    <option value="senior">Senior level (5-8 Exp. Years)</option>
+                                                </select>
+                                           </div>
                                             <label for="" class="form-label">Sent Screen short</label>
                                                 <label for="sent-img" class="border border-dashed border-2 border-cyan bg-white py-3 px-6 rounded-4 text-black hstack justify-content-center w-full">
                                                 <img src="{{ asset('frontend/images/file.svg') }}" width="35" alt="Attach the Resume" class="img-fluid me-3">
@@ -98,8 +106,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
                             </div>
                             </div>
                         </div>
