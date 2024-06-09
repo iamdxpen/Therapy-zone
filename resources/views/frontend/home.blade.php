@@ -16,24 +16,15 @@
                     </div>
                 </div>
                 <div class="col-lg-5">
-                <div class="d-flex gap-4 justify-content-end mb-4">
-                       <button type="button" class="btn btn-primary btn-square home-slider-prev transform rotate-90">
-                        <i class="bi bi-chevron-left"></i>
-                        </button>
-                        <button type="button" class="btn btn-primary btn-square home-slider-next transform rotate-90">
-                        <i class="bi bi-chevron-right"></i>
-                        </button>
-                       </div>
                     <div class="mx-auto">
-                        <div class="swiper swiper-home">
+                        <div class="swiper swiper-home overflow-visible">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
                                     <div class="card border-0">
-                                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
+                                        <div class="card-body bg-gray-200">
+                                            <h3 class="h4 text-primary">Spa name</h3>
+                                        </div>
                                         <div class="card-body">
-                                            <h3 class="h4 text-primary mb-4">Card 1</h3>
                                             <p class="text-dark mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 12345 67890</p>
                                             <p> <i class="bi bi-geo-alt-fill text-primary me-2"></i>Call us prior to book
                                                 appointment or Walk-In directly to our. Everyone is welcome.</p>
@@ -42,11 +33,10 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card border-0">
-                                        <img src="https://images.pexels.com/photos/3212179/pexels-photo-3212179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
+                                        <div class="card-body bg-gray-200">
+                                            <h3 class="h4 text-primary">Spa name</h3>
+                                        </div>
                                         <div class="card-body">
-                                            <h3 class="h4 text-primary mb-4">Card 2</h3>
                                             <p class="text-dark mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 12345 67890</p>
                                             <p> <i class="bi bi-geo-alt-fill text-primary me-2"></i>Call us prior to book
                                                 appointment or Walk-In directly to our. Everyone is welcome.</p>
@@ -55,24 +45,10 @@
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="card border-0">
-                                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h3 class="h4 text-primary mb-4">Card 3</h3>
-                                            <p class="text-dark mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 12345 67890</p>
-                                            <p> <i class="bi bi-geo-alt-fill text-primary me-2"></i>Call us prior to book
-                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
+                                        <div class="card-body bg-gray-200">
+                                            <h3 class="h4 text-primary">Spa name</h3>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card border-0">
-                                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
                                         <div class="card-body">
-                                            <h3 class="h4 text-primary mb-4">Card 4</h3>
                                             <p class="text-dark mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 12345 67890</p>
                                             <p> <i class="bi bi-geo-alt-fill text-primary me-2"></i>Call us prior to book
                                                 appointment or Walk-In directly to our. Everyone is welcome.</p>
@@ -80,6 +56,7 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar-home me-n6"></div>
                         </div>
                     </div>
                 </div>

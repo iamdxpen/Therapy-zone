@@ -68,9 +68,8 @@ var swiperHome = new Swiper(".swiper-home", {
     // effect: "cards",
     // grabCursor: true,
     mousewheel: true,
-    navigation: {
-        nextEl: ".home-slider-next",
-        prevEl: ".home-slider-prev",
+    scrollbar: {
+        el: ".swiper-scrollbar",
     },
 });
 
