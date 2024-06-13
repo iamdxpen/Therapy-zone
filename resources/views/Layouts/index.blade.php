@@ -18,10 +18,18 @@
             @yield('content')
         </main>
         @include('Layouts.footer')
+        <!-- <div class="wh-button">
+            <div class="go-top-inner hstack justify-content-center rounded-circle">
+                
+            </div>
+        </div> -->
         <div class="go-top">
             <div class="go-top-inner hstack justify-content-center rounded-circle">
                 <i class="bi bi-chevron-up font-bolder lh-none text-lg"></i>
             </div>
+        </div>
+        <div class="wh-button">
+            <a class="btn p-0 btn-success w-12 h-12 rounded-circle d-flex align-items-center justify-content-center" target="_blank" href="https://api.whatsapp.com/send?phone=7688005555" role="button"><i class="bi bi-whatsapp font-bolder lh-none text-lg"></i></a>
         </div>
     </div>
     <script src="{{ asset('frontend/js/jquery-1.11.0.min.js') }}"></script>

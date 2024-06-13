@@ -73,4 +73,26 @@ Route::group(['middleware' => ['auth:admin']], function () {
         Route::post('/remove', ['as' => 'admin.spa.packages.remove', 'uses' => 'Admin\SpaPackagesController@remove']);   
       });
 
+      Route::group(['prefix' => 'customer'], function() {
+        Route::get('/', ['as' => 'admin.customer', 'uses' => 'Admin\CustomerController@index']);
+        Route::get('/ajax-list', ['as' => 'admin.customer.ajax-list', 'uses' => 'Admin\CustomerController@ajaxList']);
+        Route::get('/add', ['as' => 'admin.customer.add', 'uses' => 'Admin\CustomerController@add']);
+        Route::post('/add', ['as' => 'admin.customer.store', 'uses' => 'Admin\CustomerController@store']);
+        Route::get('/edit/{id}', ['as' => 'admin.customer.edit', 'uses' => 'Admin\CustomerController@edit']);
+        Route::post('/edit/{id}', ['as' => 'admin.customer.update', 'uses' => 'Admin\CustomerController@update']);
+        Route::post('/update-status', ['as' => 'admin.customer.update-status', 'uses' => 'Admin\CustomerController@updateStatus']);   
+        Route::post('/remove', ['as' => 'admin.customer.remove', 'uses' => 'Admin\CustomerController@remove']);   
+      });
+
+      Route::group(['prefix' => 'customerpackages'], function() {
+        Route::get('/', ['as' => 'admin.customer.packages', 'uses' => 'Admin\CustomerPackagesController@index']);
+        Route::get('/ajax-list', ['as' => 'admin.customer.packages.ajax-list', 'uses' => 'Admin\CustomerPackagesController@ajaxList']);
+        Route::get('/add', ['as' => 'admin.customer.packages.add', 'uses' => 'Admin\CustomerPackagesController@add']);
+        Route::post('/add', ['as' => 'admin.customer.packages.store', 'uses' => 'Admin\CustomerPackagesController@store']);
+        Route::get('/edit/{id}', ['as' => 'admin.customer.packages.edit', 'uses' => 'Admin\CustomerPackagesController@edit']);
+        Route::post('/edit/{id}', ['as' => 'admin.customer.packages.update', 'uses' => 'Admin\CustomerPackagesController@update']);
+        Route::post('/update-status', ['as' => 'admin.customer.packages.update-status', 'uses' => 'Admin\CustomerPackagesController@updateStatus']);   
+        Route::post('/remove', ['as' => 'admin.customer.packages.remove', 'uses' => 'Admin\CustomerPackagesController@remove']);   
+      });
+
 });

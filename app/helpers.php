@@ -135,3 +135,23 @@ if (!function_exists('enquiryProduct')) {
         );
     }
 }
+
+if (!function_exists('uploadFile')) {
+    function uploadFile($file, $path='/', $old_path=''){
+        if(!empty($old_path)){
+            $old_file_path = str_replace('storage/','',$old_path);
+            Storage::delete($old_file_path);
+        }
+        return 'storage/'.$file->store($path);
+    }
+}
+
+if (!function_exists('generateUniqueKeys')) {
+    function generateUniqueKeys($count) {
+        $keys = [];
+        for ($i = 0; $i < $count; $i++) {
+            $keys[] = substr(str_shuffle('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 0, 8);
+        }
+        return $keys;
+    }
+}

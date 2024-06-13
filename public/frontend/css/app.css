@@ -265,8 +265,7 @@
   position: fixed;
   height: 45px;
   right: 40px;
-  bottom: 40px;
-  z-index: 2;
+  bottom: 102px;
   z-index: 999999;
   display: block;
 }
@@ -316,4 +315,18 @@
   color: #1D0B03;
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transform: translateZ(0);
+}
+
+.wh-button {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 999999;
+}
+
+.swiper-scrollbar-home {
+  background: rgba(255, 255, 255, 0.3);
+}
+.swiper-scrollbar-home .swiper-scrollbar-drag {
+  background-color: white;
 }

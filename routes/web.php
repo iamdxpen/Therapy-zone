@@ -19,3 +19,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('about-us');
 Route::get('/services', [HomeController::class, 'services'])->name('services');
+Route::post('/customer', [HomeController::class, 'store'])->name('customer.store');

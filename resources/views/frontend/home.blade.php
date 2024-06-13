@@ -1,9 +1,9 @@
 @extends('Layouts.index')
 @section('content')
-<section class="mb-lg-40 mb-10 overflow-hidden position-relative">
-    <div class="position-relative py-10 vstack background-no-repeat bg-center bg-cover h-lg-calc"
+<section class="mb-lg-40 mb-10 overflow-hidden">
+    <div class="py-10 background-no-repeat bg-center bg-cover"
         style="background-image: linear-gradient( rgba(0, 0, 0, 80%) 100%, rgba(0, 0, 0, 50%)100%), url('../frontend/images/banner/spa-banner.webp');--x-h-lg: 80px">
-        <div class="container my-lg-auto my-16 overlap-20">
+        <div class="container overlap-20">
             <div class="row align-items-center gy-6">
                 <div class="col-lg-7">
                     <div class="">
@@ -12,61 +12,28 @@
                         <div>
                             <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
                         </div>
+                       
                     </div>
                 </div>
                 <div class="col-lg-5">
-                    <div class="max-w-screen-xs mx-auto">
-                        <div class="swiper swiper-home">
+                    <div class="mx-auto">
+                        <div class="swiper swiper-home overflow-visible">
                             <div class="swiper-wrapper">
+                                @foreach($spaObj as $spa)
                                 <div class="swiper-slide">
-                                    <div class="card bg-gray-200-hover">
-                                        <img src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
+                                    <div class="card border-0">
+                                        <div class="card-body bg-gray-200">
+                                            <h3 class="h4 text-primary">{{ $spa->title }}</h3>
+                                        </div>
                                         <div class="card-body">
-                                            <h3 class="h2 text-primary mb-4">Card 1</h3>
-                                            <p> <span class="text-primary">Location: </span> Call us prior to book
-                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
+                                            <p class="text-dark mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 {{ $spa->mobile }}</p>
+                                            <p> <i class="bi bi-geo-alt-fill text-primary me-2"></i>{{ $spa->address }}</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
-                                    <div class="card bg-gray-200-hover">
-                                        <img src="https://images.pexels.com/photos/3212179/pexels-photo-3212179.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h3 class="h2 text-primary mb-4">Card 2</h3>
-                                            <p><span class="text-primary">Location: </span>Call us prior to book
-                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card bg-gray-200-hover">
-                                        <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h3 class="h2 text-primary mb-4">Card 3</h3>
-                                            <p><span class="text-primary">Location: </span>Call us prior to book
-                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="card bg-gray-200-hover">
-                                        <img src="https://images.pexels.com/photos/3738348/pexels-photo-3738348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                                            class="card-img-top h-72 object-fit-cover" width="423" height="288"
-                                            alt="...">
-                                        <div class="card-body">
-                                            <h3 class="h2 text-primary mb-4">Card 4</h3>
-                                            <p><span class="text-primary">Location: </span>Call us prior to book
-                                                appointment or Walk-In directly to our. Everyone is welcome.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
+                            <div class="swiper-scrollbar swiper-scrollbar-home me-n6"></div>
                         </div>
                     </div>
                 </div>
@@ -184,7 +151,30 @@
         </div>
     </div>
 </section>
-
+<section class="bg-gray-200 py-lg-32 py-10">
+    <div class="container position-relative">
+        <div class="row align-items-center mb-lg-20 mb-10">
+            <div class="col-8">
+                <h2 class="h1 font-bolder"> Packages<br> </h2>
+            </div>
+        </div>
+        <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+                @foreach($packageObj as $pack)
+                <div class="swiper-slide">
+                    <div class="card border-0">
+                        <div class="card-body">
+                        <h3>{{ $pack->title }}</h3>
+                            <p class="text-dark mb-2">Price:- {{ $pack->price }}</p>
+                            <p> {{ $pack->content }}</p>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
 <section class="mb-lg-40 mb-10">
     <div class="container">
         <div class="row align-items-center mb-10">

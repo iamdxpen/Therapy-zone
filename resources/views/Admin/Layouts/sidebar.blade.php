@@ -71,6 +71,22 @@
                         </a>
                     </li>
                     @endif
+
+                    @if(Auth::user()->can('product'))
+                    <li class="nav-item">
+                        <a href="{{route('admin.customer')}}" class="nav-link @if($controller == 'CustomerController') active @endif" data-key="t-analytics">  
+                        <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Customer</span>
+                        </a>
+                    </li>
+                    @endif
+
+                    @if(Auth::user()->can('product'))
+                    <li class="nav-item">
+                        <a href="{{route('admin.customer.packages')}}" class="nav-link @if($controller == 'CustomerPackagesController') active @endif" data-key="t-analytics">  
+                        <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Customer Packages</span>
+                        </a>
+                    </li>
+                    @endif
                 @endif
                 
             </ul>
