@@ -10,7 +10,12 @@
                 aria-label="Toggle navigation">
                 <span></span>
             </button>
-            <div class="collapse navbar-collapse custome-collapse gap-6" id="navbarMenu">
+            @if(session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+                <div class="collapse navbar-collapse custome-collapse gap-6" id="navbarMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link py-xl-2 px-3" href="{{route('home')}}"><span>Home</span></a>
@@ -53,54 +58,36 @@
                                         />
                                     </div>
                                     <div class="col-lg-6">
-                                       <form action="">
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Name</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control"
-                                                    name=""
-                                                    id=""
-                                                    placeholder="Enter your name"
-                                                />
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Email</label>
-                                                <input
-                                                    type="email"
-                                                    class="form-control"
-                                                    name=""
-                                                    id=""
-                                                    aria-describedby="emailHelpId"
-                                                    placeholder="Enter your Email Address"
-                                                />
-                                            </div>
-                                            <div class="mb-3">
-                                                <label for="" class="form-label">Mobile Number</label>
-                                                <input
-                                                    type="Number"
-                                                    class="form-control"
-                                                    name=""
-                                                    id=""
-                                                    aria-describedby="emailHelpId"
-                                                    placeholder="Enter your mobile number"
-                                                />
-                                            </div>
-                                           <div>
-                                           <label for="" class="form-label">Packeges</label>
-                                            <select class="form-select select-control mb-3" name="experience_level" id="demo1">
-                                                    <option selected="" disabled="">How many years of experience do you have?</option>
-                                                    <option value="junior">Junior level (1-3 Years of experience)</option>
-                                                    <option value="mid">Mid level (3-5 Years of experience)</option>
-                                                    <option value="senior">Senior level (5-8 Exp. Years)</option>
-                                                </select>
-                                           </div>
-                                            <label for="" class="form-label">Sent Screen short</label>
-                                                <label for="sent-img" class="border border-dashed border-2 border-cyan bg-white py-3 px-6 rounded-4 text-black hstack justify-content-center w-full">
-                                                <img src="{{ asset('frontend/images/file.svg') }}" width="35" alt="Attach the Resume" class="img-fluid me-3">
-                                                <span id="sent-img-preview">Attach the Shreen short*</span>
-                                                </label>
-                                        </form>
+                                    <form action="{{ route('customer.store') }}" method="POST" enctype="multipart/form-data">
+                                    @csrf
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Enter your name" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email Address" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="mobile_number" class="form-label">Mobile Number</label>
+                                        <input type="text" class="form-control" name="mobile_number" id="mobile_number" placeholder="Enter your mobile number" required />
+                                    </div>
+                                    <div>
+                                        <label for="package_id" class="form-label">Packages</label>
+                                        <select class="form-select select-control mb-3" name="package_id" id="package_id" required>
+                                            @php $packages = App\Models\CustomerPackage::where('status', 'Active')->get();   @endphp
+                                            <option value="">Select Please</option>
+                                            @foreach($packages as $pack)
+                                            <option value="{{ $pack->id }}">{{ $pack->title }} -- {{ $pack->price}}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="screenshot" class="form-label">Send Screenshot</label>
+                                        <input type="file" class="form-control" name="screenshot" id="screenshot" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
                                         
                                     </div>
                                 </div>

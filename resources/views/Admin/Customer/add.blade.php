@@ -1,5 +1,5 @@
 @extends('Admin.Layouts.master')
-@section('page-title', 'Spa Management')
+@section('page-title', 'Customer Management')
 
 @section('main-content')
 <div class="page-content">
@@ -9,13 +9,13 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                    <h4 class="mb-sm-0">Spa Management</h4>
+                    <h4 class="mb-sm-0">Customer Management</h4>
 
                     <div class="page-title-right">
                         <ol class="breadcrumb m-0">
                             <li class="breadcrumb-item"><a href="{{route('admin.dashboard')}}">Dashboards</a></li>
-                            <li class="breadcrumb-item"><a href="{{route('admin.spa')}}">Spa Management</a></li>
-                            <li class="breadcrumb-item active">Update Spa</li>
+                            <li class="breadcrumb-item"><a href="{{route('admin.customer')}}">Customer Management</a></li>
+                            <li class="breadcrumb-item active">Add Customer</li>
                         </ol>
                     </div>
 
@@ -24,12 +24,12 @@
         </div>
         <!-- end page title -->
 
-        {{ Form::open(['route' => ['admin.spa.update', ['id' => $spa->id]], 'id' => 'silderFrom', 'data-parsley-validate', 'files' => true, 'autocomplete' => 'off']) }}
+        {{ Form::open(['route' => 'admin.customer.store', 'id' => 'customerFrom', 'data-parsley-validate', 'files' => true, 'autocomplete' => 'off']) }}
         <div class="row">
             <div class="col-lg-12">
                 <div class="card">
                     <div class="card-header align-items-center d-flex">
-                        <h4 class="card-title mb-0 flex-grow-1">Update Spa</h4>
+                        <h4 class="card-title mb-0 flex-grow-1">Add New Customer</h4>
                     </div>
                     <div class="card-body">
                         @if(Session::has('error'))
@@ -44,44 +44,41 @@
                         <div class="alert alert-danger mb-2" category="alert">{!! $errors->first() !!}</div>
                         @endforeach
 
+                        
                         <div class="row">
                             <div class="col-6">
                                 <div class="mb-3">
-                                    <label for="title" class="form-label">Title <span class="text-danger">*</span></label>
-                                    {{Form::text('title',$spa->title, ['class' => 'form-control', 'placeholder' => 'Enter Title', 'id' => 'title', 'required'])}}
+                                    <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
+                                    {{Form::text('name', '', ['class' => 'form-control', 'placeholder' => 'Enter Name', 'id' => 'name', 'required'])}}
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="mb-3">
+                                    <label for="mobile" class="form-label">Mobile <span class="text-danger">*</span></label>
+                                    {{Form::text('mobile', '', ['class' => 'form-control', 'placeholder' => 'Enter Mobile', 'id' => 'mobile', 'required'])}}
                                 </div>
                             </div>
                             <div class="col-3">
                                 <div class="mb-3">
                                     <label for="status" class="form-label">Status <span class="text-danger">*</span></label>
                                     @php($status = array('Active' => 'Active', 'Inactive' => 'Inactive'))
-                                    {{Form::select('status', $status, $spa->status,['class' => 'form-select', 'required'])}}
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="mb-3">
-                                    <label for="display_order" class="form-label">Display Order </label>
-                                    {{Form::text('display_order', $spa->display_order, ['class' => 'form-control', 'placeholder' => 'Enter Display Order', 'id' => 'diamondrate','data-parsley-display_order'=>"true", 'data-parsley-display_order-message'=>"Display Order Number Already Taken"])}}
+                                    {{Form::select('status', $status, '',['class' => 'form-select', 'required'])}}
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-4">
+                                <?php
+                                $packages = App\Models\CustomerPackage::where('status', 'Active')->get()->pluck('title', 'id');
+                                ?>
                                 <div class="mb-3">
-                                <label for="image" class="form-label">Image </label>
-                                    {{Form::file('image', ['class' => 'form-control', 'placeholder' => 'Select image', 'id' => 'image'])}}
-                                    <a href="{{ get_image_url($spa->image) }}"> View Image </a>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="mb-3">
-                                <label for="webp_image" class="form-label">Webp Image </label>
-                                    {{Form::file('webp_image', ['class' => 'form-control', 'placeholder' => 'Select Webp image', 'id' => 'webp_image'])}}
-                                    <a href="{{ get_image_url($spa->webp_image) }}"> View Webp Image </a>
+                                    <label for="package_id" class="form-label">Packages<span class="text-danger">*</span></label>
+                                    {{Form::select('package_id', $packages, '',['class' => 'form-select', 'placeholder' => '-please select-','required'])}}
                                 </div>
                             </div>
                         </div>
-                        
+                           
                         <div class="row">
                             <div class="col-12">
                                 <div class="text-end">
@@ -89,7 +86,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        
                 </div>
             </div>
             <!--end col-->
@@ -106,12 +103,13 @@
 
 @section('page-js')
 <script>
-    $(function(){
-        'use strict'
+     $(function(){
+      'use strict'
 
-        $('#spaFrom').submit(function() {
+        $('#customerFrom').submit(function() {
             $('.vertical-overlay').show(); 
         });
+  
         window.ParsleyValidator.addValidator('display_order', 
             function (value) {
                 var valid = false;
@@ -119,7 +117,6 @@
                     url: '{{route("admin.check-display-order")}}',
                     data: {
                         display_order: value,
-                        id: {{$spa->id}},
                         _token: "{{ csrf_token() }}"
                     },
                     type: 'POST',
@@ -134,5 +131,6 @@
         32);
   
     });
-</script>
-@endsection
+
+ </script>
+@endsection 

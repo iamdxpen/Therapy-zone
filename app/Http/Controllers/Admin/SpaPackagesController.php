@@ -50,7 +50,6 @@ class SpaPackagesController extends Controller
                 </a>
 
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                    <li><a class="dropdown-item" href="'.route('admin.spa.packages.edit', ['id' => $content->id]).'">Edit</a></li>
                     <li><a class="dropdown-item spa_remove" href="javascript:void(0)" data-id="' . $content->id . '">Delete</a></li>
                 </ul>
             </div>';
@@ -64,7 +63,7 @@ class SpaPackagesController extends Controller
 
             $rowData = array(
                 $i,
-                '<a href="'.route('admin.spa.packages.edit', ['id' => $content->id]).'">'.$content->title.'</a>',
+                $content->title,
                 $content->price,
                 $isActive,
                 date("d-m-Y H:i:s",strtotime($content->created_at)),
@@ -122,29 +121,29 @@ class SpaPackagesController extends Controller
         }
     }
 
-    public function update($id, Request $request){
-        $this->validate($request, [
-            'title' => 'required',
-            'price' => 'required',
-            'content' => 'required',
-            'status'   => 'required',
-        ]);
+    // public function update($id, Request $request){
+    //     $this->validate($request, [
+    //         'title' => 'required',
+    //         'price' => 'required',
+    //         'content' => 'required',
+    //         'status'   => 'required',
+    //     ]);
 
-        $spa = SpaPackage::where('id', $id)->first();
-        if($spa){
-            $spa->title = $request->title;
-            $spa->price = $request->price;
-            $spa->content = $request->content;
-            $spa->status = $request->status;
-            if($spa->save()){ 
-                return redirect()->route('admin.spa.packages')->with('success', 'Spa updated successfully.');
-            } else {
-                return redirect()->back()->with('error', 'Spa not updated.');
-            }
-        } else {
-            return redirect()->route('admin.spa.packages')->with('success', 'Spa not found.');
-        }
-    }
+    //     $spa = SpaPackage::where('id', $id)->first();
+    //     if($spa){
+    //         $spa->title = $request->title;
+    //         $spa->price = $request->price;
+    //         $spa->content = $request->content;
+    //         $spa->status = $request->status;
+    //         if($spa->save()){ 
+    //             return redirect()->route('admin.spa.packages')->with('success', 'Spa updated successfully.');
+    //         } else {
+    //             return redirect()->back()->with('error', 'Spa not updated.');
+    //         }
+    //     } else {
+    //         return redirect()->route('admin.spa.packages')->with('success', 'Spa not found.');
+    //     }
+    // }
 
     public function updateStatus(Request $request){
         if($request->has('id') && $request->has('status')) {
