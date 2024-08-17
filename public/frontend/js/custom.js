@@ -58,18 +58,26 @@ var typeOfSpa = new Swiper(".type-of-spa", {
 });
 
 var swiperHome = new Swiper(".swiper-home", {
-    // direction: "vertical",
     autoHeight: true,
     spaceBetween: 24,
-    slidesPerView: "auto",
-    // slidesPerView: 1,
+    // slidesPerView: "auto",
     centeredSlides: false,
     direction: "vertical",
-    // effect: "cards",
-    // grabCursor: true,
     mousewheel: true,
     scrollbar: {
         el: ".swiper-scrollbar",
+    },
+    breakpoints: {
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // when window width is >= 768px
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
     },
 });
 

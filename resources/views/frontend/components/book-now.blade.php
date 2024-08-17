@@ -9,7 +9,9 @@
                     <h2 class="text-primary h1 mb-2">Book Now</h2>
                     <p class="text-gray-200">Feel like yourself again</p>
                 </div>
-                <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
+                <button type="button" class="btn btn-lg btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Book Appointment
+                </button>
             </div>
         </div>
     </div>
