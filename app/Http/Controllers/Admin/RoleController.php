@@ -105,8 +105,8 @@ class RoleController extends Controller
         $roleObj->guard_name = 'admin';
 
         if($roleObj->save()){
-            $permissions = $request->permission;
-            $roleObj->syncPermissions($permissions);
+           $permissions = Permission::where('id',$request->permission)->first();
+            $roleObj->syncPermissions($permissions->name);
             return redirect()->route('admin.roles')->with('success', 'Role added successfully.');
         } else {
             return redirect()->back()->with('error', 'Role not added.');

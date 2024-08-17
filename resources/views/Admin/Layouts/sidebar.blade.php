@@ -53,10 +53,8 @@
                 </li>
                 @endif
 
-                @if(Auth::user()->can('product') || Auth::user()->can('enquiry'))
-                    <li class="menu-title"><span data-key="t-menu">Products & Enquiries</span></li>
-
-                    @if(Auth::user()->can('product'))
+                
+                    @if(Auth::user()->can('employee_management'))
                     <li class="nav-item">
                         <a href="{{route('admin.spa')}}" class="nav-link @if($controller == 'SpaController') active @endif" data-key="t-analytics">  
                         <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Spa</span>
@@ -64,7 +62,7 @@
                     </li>
                     @endif
 
-                    @if(Auth::user()->can('product'))
+                    @if(Auth::user()->can('employee_management'))
                     <li class="nav-item">
                         <a href="{{route('admin.spa.packages')}}" class="nav-link @if($controller == 'SpaPackagesController') active @endif" data-key="t-analytics">  
                         <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Spa Packages</span>
@@ -72,22 +70,35 @@
                     </li>
                     @endif
 
-                    @if(Auth::user()->can('product'))
+                    @if(Auth::user()->can('all_management'))
                     <li class="nav-item">
                         <a href="{{route('admin.customer')}}" class="nav-link @if($controller == 'CustomerController') active @endif" data-key="t-analytics">  
                         <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Customer</span>
+                          @php
+                                $pendingTaskCount = \App\Models\Customer::where('is_vip_customer', '0')->count();
+                                @endphp
+                                @if($pendingTaskCount > 0)
+                                    <span class="badge rounded-pill bg-danger float-end" id="pending-task-count" key="t-hot">{{ $pendingTaskCount }}</span>
+                                @endif
                         </a>
                     </li>
                     @endif
 
-                    @if(Auth::user()->can('product'))
+                    @if(Auth::user()->can('all_management'))
                     <li class="nav-item">
                         <a href="{{route('admin.customer.packages')}}" class="nav-link @if($controller == 'CustomerPackagesController') active @endif" data-key="t-analytics">  
                         <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Customer Packages</span>
                         </a>
                     </li>
                     @endif
-                @endif
+                    
+                     @if(Auth::user()->can('all_management'))
+                    <li class="nav-item">
+                        <a href="{{route('admin.customer.data')}}" class="nav-link @if($controller == 'SpaDataController') active @endif" data-key="t-analytics">  
+                        <i class="ri-shopping-cart-fill"></i> <span data-key="t-dashboards">Spa Data</span>
+                        </a>
+                    </li>
+                    @endif
                 
             </ul>
         </div>

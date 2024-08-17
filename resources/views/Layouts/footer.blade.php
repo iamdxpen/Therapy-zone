@@ -8,14 +8,18 @@
                         <img class="mb-4" width="207" src="{{ asset('frontend/images/logo/logo-light.svg') }}"
                             alt="Therapy Zone">
                     </a>
-                    <p class="text-white text-semibold text-sm mb-4">Therapy Zone: Your path to well-being
-                        begins here. Discover services and insights for a happier, healthier you.</p>
+                    <p class="text-white text-semibold text-sm mb-4">GrowthWibes Marketing PVT.LTD
+                        </br>44, Arth Business Centre (ABC Building),
+                        </br>Opp-Torrent Power, 
+                        </br>S.P Ring Road, Nikol, 
+                        </br>Ahmedabad -382350
+                    </p>
                     <!-- <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">
                         <i class="bi bi-geo-alt me-2 text-primary"></i>Nikol Ahmedabad Gujrat 382350</a> -->
                     <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">
-                        <i class="bi bi-envelope me-2 text-primary"></i> support@doctors.com</a>
+                        <i class="bi bi-envelope me-2 text-primary"></i> Growthwibes@gmail.com</a>
                     <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">
-                        <i class="bi bi-telephone me-2 text-primary"></i> +91 12345 67890</a>
+                        <i class="bi bi-telephone me-2 text-primary"></i> +91 76880 05555</a>
 
                 </div>
             </div>
@@ -29,13 +33,13 @@
             </div>
             <div class="col-xl-4 col-md-6">
                 <p class="text-primary font-bold mb-4">Timing</p>
-                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Sunday 10:30 AM to 09:30 PM</a>
-                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Monday 10:30 AM to 09:30 PM</a>
-                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Tuesday 10:30 AM to 09:30 PM</a>
-                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Wednesday 10:30 AM to 09:30 PM</a>
-                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Thursday 10:30 AM to 09:30 PM</a>
-                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Friday 10:30 AM to 09:30 PM</a>
-                <a class="d-block text-gray-300 text-hover-primary" href="#">Saturday 10:30 AM to 09:30 PM</a>
+                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Sunday 11:00 AM to 09:00 PM</a>
+                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Monday 11:00 AM to 09:00 PM</a>
+                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Tuesday 11:00 AM to 09:00 PM</a>
+                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Wednesday 11:00 AM to 09:00 PM</a>
+                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Thursday 11:00 AM to 09:00 PM</a>
+                <a class="d-block mb-2 text-gray-300 text-hover-primary" href="#">Friday 11:00 AM to 09:00 PM</a>
+                <a class="d-block text-gray-300 text-hover-primary" href="#">Saturday 11:00 AM to 09:00 PM</a>
             </div>
             <div class="col-xl-3 col-md-6">
                 <p class="text-primary font-bold mb-4">Our Social Networks</p>

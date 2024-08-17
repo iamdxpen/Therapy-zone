@@ -52,7 +52,7 @@
                                 <div class="row gy-6 align-items-center">
                                     <div class="col-lg-6">
                                         <img
-                                            src="{{ asset('frontend/images/google-pay.jpg') }}"
+                                            src="{{ asset('frontend/images/google-pay.png') }}"
                                             class=""
                                             alt="google pay QR"
                                         />
@@ -94,7 +94,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Submit</button>
+                                <!--<button type="button" class="btn btn-primary">Submit</button>-->
                             </div>
                             </div>
                         </div>

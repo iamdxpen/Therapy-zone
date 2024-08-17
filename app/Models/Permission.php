@@ -109,7 +109,19 @@ class Permission extends \Spatie\Permission\Models\Permission
                 'name' => 'Enquiry Management',
                 'role' => 'enquiry',
                 'guard' => 'admin'
-            )                        
+            ),
+            array(
+                'group' => 'All Management',
+                'name' => 'All Management',
+                'role' => 'all_management',
+                'guard' => 'admin'
+            ),
+            array(
+                'group' => 'Employee Management',
+                'name' => 'Employee Management',
+                'role' => 'employee_management',
+                'guard' => 'admin'
+            )
         );
     }
 

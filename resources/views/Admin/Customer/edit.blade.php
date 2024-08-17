@@ -94,6 +94,7 @@
                                 </div>
                             </div>
                             @endif
+                            <a target="_blank" href="https://api.whatsapp.com/send?phone={{ $customer->mobile }}" role="button"></i>Send Code On whatsapp</a>
                         </div>
                         
                         <div class="row">

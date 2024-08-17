@@ -102,7 +102,11 @@ class UserController extends Controller
         $userObj->password = bcrypt($request->password);
         $userObj->status = $request->status;
         if($userObj->save()){
-            $userObj->assignRole($request->role);
+           $role = Role::find($request->role);
+        if(!$role) {
+            return Redirect::back()->with('error', 'Role does not exist.');
+        }
+        $userObj->assignRole($role->name);
             return Redirect::route('admin.users')->with('success', 'User added successfully.');
         } else {
             return Redirect::back()->with('error', 'User not added.');

@@ -34,41 +34,10 @@
     </div>
     <script src="{{ asset('frontend/js/jquery-1.11.0.min.js') }}"></script>
     <script src="{{ asset('frontend/js/bootstrap.bundle.min.js') }}"></script>
-    <!-- <script src="{{asset('plugins/toastr/toastr.min.js')}}"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> -->
     <script src="https://unpkg.com/swiper@11.1.1/swiper-bundle.min.js"></script>
     <script src="{{ asset('frontend/js/custom.js') }}"></script>
     <!-- slider -->
     <script>
-    // var swiper = new Swiper(".testimonial-slider", {
-    //     slidesPerView: 1,
-    //     spaceBetween: 24,
-    //     loop: true,
-    //     autoplay: {
-    //         delay: 2000,
-    //         disableOnInteraction: false
-    //     },
-    //     pagination: {
-    //         el: '.swiper-pagination',
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: '.testimonial-slider-next',
-    //         prevEl: '.testimonial-slider-prev',
-    //     },
-    //     breakpoints: {
-    //         // when window width is >= 640px
-    //         768: {
-    //             slidesPerView: 2,
-    //             spaceBetween: 20,
-    //         },
-    //         // when window width is >= 768px
-    //         992: {
-    //             slidesPerView: 3,
-    //             spaceBetween: 30,
-    //         },
-    //     }
-    // });
     </script>
 </body>
 

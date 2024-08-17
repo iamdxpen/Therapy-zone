@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Spa;
 use App\Models\CustomerPackage;
 use App\Models\Customer;
-
+use App\Models\CustomerCode;
+use App\Models\SpaData;
 class HomeController extends Controller
 {
 
@@ -51,5 +52,33 @@ class HomeController extends Controller
         }
         $customerObj->save();
         return redirect()->back()->with('success', 'Customer created successfully.');
+    }
+    
+    public function code()
+    {
+        return view('Admin.Customer.code');
+    }
+
+    public function storeCode(Request $request)
+    {
+        $this->validate($request, [
+            'spa' => 'required',
+            'customer' => 'required',
+            'code' => 'required'
+        ]);
+        $status = 'NotUse';
+        $codeObj = CustomerCode::where('customer_id',$request->customer)->where('code',$request->code)->where('status',$status)->first();
+        if(!empty($codeObj)){
+            $codeObj->status = "Used";
+            $codeObj->save();
+            $spaObj = new SpaData();
+            $spaObj->customer_id = $request->customer;
+            $spaObj->spa_id = $request->spa;
+            $spaObj->code = $request->code; 
+            $spaObj->save();
+            return redirect()->route('code')->with('success', 'Customer Code successfully verify.');
+        } else {
+            return redirect()->back()->with('error', 'Customer not found.');
+        }
     }
 }

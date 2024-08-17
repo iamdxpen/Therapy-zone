@@ -16,7 +16,7 @@
                     <img width="64" class="h-16 object-contain" src="{{ asset('frontend/images/icon/therapists.svg') }}"
                         alt="Therapists">
                     <div>
-                        <h2 class="font-60 text-hover-primary">6</h2>
+                        <h2 class="font-60 text-hover-primary">16</h2>
                         <p>Therapists</p>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <img width="64" class="h-16 object-contain"
                         src="{{ asset('frontend/images/icon/happy-clients.svg') }}" alt="Happy Clients">
                     <div>
-                        <h2 class="font-60 text-hover-primary">123</h2>
+                        <h2 class="font-60 text-hover-primary">125</h2>
                         <p>Happy Clients</p>
                     </div>
                 </div>

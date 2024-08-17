@@ -94,5 +94,12 @@ Route::group(['middleware' => ['auth:admin']], function () {
         Route::post('/update-status', ['as' => 'admin.customer.packages.update-status', 'uses' => 'Admin\CustomerPackagesController@updateStatus']);   
         Route::post('/remove', ['as' => 'admin.customer.packages.remove', 'uses' => 'Admin\CustomerPackagesController@remove']);   
       });
+      
+      Route::group(['prefix' => 'spadata'], function() {
+        Route::get('/', ['as' => 'admin.customer.data', 'uses' => 'Admin\SpaDataController@index']);
+        Route::get('/ajax-list', ['as' => 'admin.customer.data.ajax-list', 'uses' => 'Admin\SpaDataController@ajaxList']);
+        Route::post('/update-status', ['as' => 'admin.customer.data.update-status', 'uses' => 'Admin\SpaDataController@updateStatus']);   
+        Route::post('/remove', ['as' => 'admin.customer.data.remove', 'uses' => 'Admin\SpaDataController@remove']);   
+      });
 
 });

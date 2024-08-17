@@ -12,7 +12,7 @@ class SpaPackagesController extends Controller
 {
     public function __construct() {
         //parent::__construct();
-        $this->middleware('permission:slider');
+        $this->middleware('permission:employee_management');
     }
 
     public function index(){

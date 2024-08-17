@@ -10,7 +10,9 @@
                         <p class="mb-8 text-gray-200">MOST LAXURY IN BANER</p>
                         <h1 class="mb-8 text-light text-main">Therapy Zone</h1>
                         <div>
-                            <a class="btn btn-lg btn-light" role="button">Book Appointment</a>
+                            <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Book Appointment
+                            </button>
                         </div>
                        
                     </div>
@@ -23,15 +25,15 @@
                                 <div class="swiper-slide">
                                     <div class="card border-0">
                                         <div class="card-body bg-gray-200">
-                                            <h3 class="h4 text-primary">{{ $spa->title }}</h3>
+                                            <h3 class="h4 text-primary title-toggle" style="cursor: pointer;">{{ $spa->title }}</h3>
                                         </div>
-                                        <div class="card-body">
+                                        <div class="card-body details" style="display: none;">
                                             <p class="text-dark mb-2"><i class="bi bi-telephone-fill text-primary me-2"></i>+91 {{ $spa->mobile }}</p>
-                                            <p> <i class="bi bi-geo-alt-fill text-primary me-2"></i>{{ $spa->address }}</p>
+                                            <p><i class="bi bi-geo-alt-fill text-primary me-2"></i>{{ $spa->address }}</p>
                                         </div>
                                     </div>
                                 </div>
-                                @endforeach
+                            @endforeach
                             </div>
                             <div class="swiper-scrollbar swiper-scrollbar-home me-n6"></div>
                         </div>
@@ -69,35 +71,65 @@
             <h2 class="h1 mb-5 text-light">Get An Incredible Experience with Therapy Zone Thai</h2>
             <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority
                 have suffered alteration in some form, buying to injected humour, or randomised words which don't look
-                even many desktop publishing packages.</p>
+                even many desktop publishing packages,All message will be of 60 minutes duration.</p>
         </div>
         <div class="row row-cols-lg-4 row-cols-md-2 gy-3 text-gray-500">
             <div>
                 <ul class="list-check-1 list-unstyled vstack gap-3 mb-0">
-                    <li>Aroma Therapy</li>
-                    <li>Back Massage</li>
-                    <li>Head & Shoulder Massage</li>
+                    <li class="text-light">Head & Shoulder Massage</li>
+                    <li class="text-light">Foot Massage</li>
+                    <li class="text-light">Relax Massage</li>
+                    <li class="text-light">OIL Massage</li>
                 </ul>
             </div>
             <div>
                 <ul class="list-check-1 list-unstyled vstack gap-3 mb-0">
-                    <li>Thai Massage</li>
-                    <li>Deep Tissue</li>
-                    <li>Body Scrub</li>
+                    <li class="text-light">Aroma Massage</li>
+                    <li class="text-light">Deep Tissue Massage</li>
+                    <li class="text-light">LOMI LOMI Massage</li>
+                    <li class="text-light">Thai Massage</li>
+                   
                 </ul>
             </div>
             <div>
                 <ul class="list-check-1 list-unstyled vstack gap-3 mb-0">
-                    <li>Swedish Massage</li>
-                    <li>Couple Massage</li>
-                    <li>Body Polish</li>
+                    <li class="text-light">Swedish Massage</li>
+                    <li class="text-light">Balinese Massage</li>
+                    <li class="text-light">Back Massage</li>
+                    <li class="text-light">Body Polish</li>
                 </ul>
             </div>
             <div>
                 <ul class="list-check-1 list-unstyled vstack gap-3 mb-0">
-                    <li>Balinese Massage</li>
-                    <li>Foot Massage</li>
+                    <li class="text-light">Cream Massage (Full Body)</li>
+                    <li class="text-light">Gel Massage (Full Body)</li>
+                    <li class="text-light">Scrub Massage (Full Body)</li>
+                    <li class="text-light">hammam Massage </li>
                 </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-200 py-lg-32 py-10">
+    <div class="container position-relative">
+        <div class="row align-items-center mb-lg-20 mb-10">
+            <div class="col-8">
+                <h2 class="h1 font-bolder"> Packages<br> </h2>
+            </div>
+        </div>
+        <div class="swiper testimonial-slider">
+            <div class="swiper-wrapper">
+                @foreach($packageObj as $pack)
+                <div class="swiper-slide">
+                    <div class="card border-0">
+                        <div class="card-body" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <h3>{{ $pack->title }}</h3>
+                            <p class="text-dark mb-2">Price:- {{ $pack->price }}</p>
+                            <p> {{ $pack->content }}</p>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -147,30 +179,6 @@
             </div>
             <div class="col-lg-6 text-center order-lg-2 order-1">
                 <img width="520" class="" src="{{ asset('frontend/images/home-page/about-us.jpg') }}" alt="about us">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="bg-gray-200 py-lg-32 py-10">
-    <div class="container position-relative">
-        <div class="row align-items-center mb-lg-20 mb-10">
-            <div class="col-8">
-                <h2 class="h1 font-bolder"> Packages<br> </h2>
-            </div>
-        </div>
-        <div class="swiper testimonial-slider">
-            <div class="swiper-wrapper">
-                @foreach($packageObj as $pack)
-                <div class="swiper-slide">
-                    <div class="card border-0">
-                        <div class="card-body">
-                        <h3>{{ $pack->title }}</h3>
-                            <p class="text-dark mb-2">Price:- {{ $pack->price }}</p>
-                            <p> {{ $pack->content }}</p>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
             </div>
         </div>
     </div>
@@ -345,3 +353,20 @@
     </div>
 </section>
 @endsection
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var titles = document.querySelectorAll('.title-toggle');
+    
+    titles.forEach(function(title) {
+        title.addEventListener('click', function() {
+            var details = this.parentElement.nextElementSibling;
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        });
+    });
+});
+    
+</script>

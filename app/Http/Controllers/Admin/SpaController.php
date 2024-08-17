@@ -13,7 +13,7 @@ class SpaController extends Controller
 {
     public function __construct() {
         //parent::__construct();
-        $this->middleware('permission:slider');
+        $this->middleware('permission:employee_management');
     }
 
     public function index(){
@@ -67,7 +67,7 @@ class SpaController extends Controller
                 $i,
                 '<a href="'.route('admin.spa.edit', ['id' => $content->id]).'">'.$content->title.'</a>',
                 $content->mobile,
-                $content->package->title,
+                !empty($content->package)?$content->package->title:'',
                 $isActive,
                 date("d-m-Y H:i:s",strtotime($content->created_at)),
                 $action

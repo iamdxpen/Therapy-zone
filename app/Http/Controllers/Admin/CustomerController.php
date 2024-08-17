@@ -57,7 +57,7 @@ class CustomerController extends Controller
             </div>';
 
             $isActive = '';
-            if ($content->status == 'Active') {
+           if ($content->is_vip_customer == 1) {
                 $isActive = '<a href="javascript:void(0)" data-id="' . $content->id . '" class="customer_active tooltipped" data-position="top" title="Active"><i class="ri-checkbox-circle-line align-middle text-success fs-16"></i></a>';
             } else {
                 $isActive = '<a href="javascript:void(0)" data-id="' . $content->id . '" class="customer_inactive tooltipped" data-position="top" title="Inactive"><i class="ri-checkbox-circle-line align-middle text-danger fs-16"></i></a>';
@@ -67,7 +67,7 @@ class CustomerController extends Controller
                 $i,
                 '<a href="'.route('admin.customer.edit', ['id' => $content->id]).'">'.$content->name.'</a>',
                 $content->mobile,
-                $content->package->title,
+                isset($content->package)?$content->package->title:'-',
                 $isActive,
                 date("d-m-Y H:i:s",strtotime($content->created_at)),
                 $action
